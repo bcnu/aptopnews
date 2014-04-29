@@ -1,0 +1,77 @@
+﻿.bd-accordion{
+  
+}
+.yt-accordion {
+    margin: 0 0;
+}
+
+h3.yt-toggler {
+    cursor: pointer;
+    border-top: 1px solid #d3dfed;
+	border-bottom:none;
+    font-size: 100%;
+	font-weight:normal;
+    color: #999;
+    margin: 0 0;
+    padding: 0 6px 0 13px;
+	background:url(../../images/title-accor.gif) repeat-x top left;
+	width:auto;
+	height:29px;
+	line-height:29px;
+}
+h3.yt-toggler.first{
+	border:none;
+}
+h3.yt-toggler.open.first,
+h3.open{
+	color:#135cae;
+	border-bottom: 1px solid #d3dfed;
+}
+h3.yt-toggler span{
+	background:url(../../images/arrow_closed.png) no-repeat right center;
+	display:block;
+}
+h3.open span{
+	 background: url(../../images/arrow_open.png) no-repeat right center;
+}
+h3.yt-toggler.active {
+    color: #000000;
+}
+
+
+
+h3.yt-toggler:focus {
+	outline:none;
+    border: 2px dotted #cc0000;	
+    margin: -1px -1px 3px -1px;
+}
+
+div.yt-element .yt_item_desc, div.yt-element h4 {
+    margin: 0px;
+    padding: 5px 20px;
+	color:#333;
+}
+
+blockquote {
+    padding: 5px 20px;
+}
+.yt-accordion-image{
+	text-align:center;
+	margin:20px 0 10px;
+}
+.yt-accordion-content{
+    margin:0.75em 0 1em;
+    color:#FFFFFF;
+	overflow:hidden;
+}
+.yt-accordion-image img{
+
+}
+.yt-element{
+	background:#f1f1f1 url(../../images/accor-content-bg.gif) repeat-x left top;
+}
+.yt-accordion-content .yt-accordion-readmore a{
+    text-decoration: none;
+    color:#006BB9;
+	margin:0 20px;
+}

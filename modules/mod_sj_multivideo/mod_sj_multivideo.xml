@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Sj Multi Video</name>
+	<creationDate>February 2012</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2012 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>2.5</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_multivideo">mod_sj_multivideo.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_sj_multivideo.ini</language>
+		<language tag="en-GB">en-GB.mod_sj_multivideo.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="general" label="General Setting" addfieldpath="/modules/mod_sj_multivideo/elements"> 	    	
+				 <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />	
+				 <field name="video_width" type="text" default="335" label="Video width" />
+				 <field name="video_height" type="text" default="400" label="Video height" />	 
+				 <field name="flash_version" type="text" default="6" label="Flash Version" description="edit the minimum version of flash player (default value is 6)" />
+				 <field name="flash_count" type="text" default="1" label="Flash Player ID" description="edit video flash player id" />
+				 <field name="controlbar" type="radio" default="0" label="Controlbar" description="position of the controlbar (default value is bottom)" >
+					   <option value="1">Over</option>
+					   <option value="0">Bottom</option>
+				 </field>			   				 
+				 <field name="playlist_url" size="40" type="text" default="E5BF7E5755495708" label="ID Multi playlist URL" />
+				 <field name="select_skin" type="folderlist" default="" label="Select skin" directory="/modules/mod_sj_multivideo/assets/skin" hide_default="1" hide_none="1" description="Video skin" />			
+			   	 <field name="playlist_position" type="list" default="bottom" label="Playlist Position">
+					  <option value="">None</option>
+					  <option value="over">Over</option>
+					  <option value="right">Right</option>
+					  <option value="bottom">Bottom</option>		
+				</field>
+				<field name="playlist_size" type="text" default="120" label="Playlist Size" />						   			
+			    <field name="autostart" type="radio" default="0" label="Autostart" description="automatically start playing (default value is no)" >
+					  <option value="1">Yes</option>
+					  <option value="0">No</option>
+				 </field>
+			     <field name="playlist_repeat" type="list" default="" label="Repeat" description="continously repeat playback (default value is no)" >
+					<option value="">No</option>
+					<option value="repeat=always">Always</option>
+					<option value="repeat=list">List</option>
+			   </field>
+			   <field name="playlist_shuffle" type="list" default="" label="Shuffle" description="shuffle playlist order (default value is no)" >
+					<option value="">No</option>
+					<option value="shuffle=true">Shuffle</option>
+			   </field>	
+			</fieldset>
+		</fields>
+	</config>
+</extension>

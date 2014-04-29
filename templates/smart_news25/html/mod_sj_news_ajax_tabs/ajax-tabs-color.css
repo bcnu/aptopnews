@@ -1,0 +1,16 @@
+.sj-ajax-tabs .tabs-container ul.tabs li .tab{font-size:12px;font-weight:bold;text-transform:uppercase;}
+.sj-ajax-tabs .tabs-content{background-color:#FFFFFF;}
+
+.sj-ajax-tabs .tabs-container ul.tabs li .tab{color: #FFFFFF;}
+.sj-ajax-tabs .tabs-container ul.tabs li .tab:hover{}
+.sj-ajax-tabs .tabs-container ul.tabs li.selected .tab{}
+
+.sj-ajax-tabs .pager-container ul.pages li .page{border-color:#3366CC; font-weight:bold; color:#3366CC}
+.sj-ajax-tabs .pager-container ul.pages li .page.active{background-color:#3366CC; color: #FFFFFF;}
+
+.sj-ajax-tabs .item-wrap .item-image img{}
+.sj-ajax-tabs .item-wrap .item-image img:hover{}
+.sj-ajax-tabs .item-wrap .item-title,
+.sj-ajax-tabs .item-wrap .item-title a{ font-size:12px; font-weight:bold; }
+.sj-ajax-tabs .item-wrap .item-description{ font-size:12px; font-weight: normal;}
+.sj-ajax-tabs .item-wrap .item-readmore a{ font-size:12px; font-weight: normal; }

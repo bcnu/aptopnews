@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>Sj Hot Topic</name>
+	<creationDate>February 2012</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2012 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>2.5</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_hottopic">mod_sj_hottopic.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>core</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_sj_hottopic.ini</language>
+		<language tag="en-GB">en-GB.mod_sj_hottopic.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_sj_hottopic/core/elements" >
+			<fieldset name="general" label="General Setting" > 	    		
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />				
+				<field type="sjheading" label="Source Options" />
+				<field name="source" type="sjcontentcategories" multiple="multiple" default="" label="Data Source" description="Select category" />
+				<field name="subcategories" type="radio" default="1" label="Include Subcategories" description="Including products belonging to sub-categories.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="source_order_by" type="list" default="created" label="Sort Order By" description="Sort order type">
+					<option value="created">Recently Added</option>
+					<option value="hits">Most Views</option>
+					<option value="modified">Recently Modified</option>
+					<option value="ordering">Ordering</option>
+					<option value="title">Title</option>
+					<option value="random">Random</option>
+				</field>
+				<field name="source_filter" type="list" default="0" label="Source Filter" description="Frontpage filter type">
+					<option value="0">All Articles</option>
+					<option value="1">None Frontpage</option>
+					<option value="2">Only Frontpage</option>
+				</field>
+				<field name="source_limit" type="text" default="20" label="Item Count" description="The amount of Items which you want to show in the module" />
+				<field type="sjheading" label="Item Options" />
+				<field name="item_title_max_characs" type="text" default="25" label="Max Length of Title" description="Max length of title" />
+				
+				<field name="item_desc_max_characs" type="text" default="50" label="Max Length of Description" description="Max length of Description" />
+				<field name="item_desc_keephtml" type="radio" default="1" label="Keep HTML" description="Strip html tag in description or keep them.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>				
+				<field type="sjheading" label="Image Options" />
+				<field name="item_image_width" type="text" default="180" label="Image width" description="Image width" />
+				<field name="item_image_height" type="text" default="150" label="Image height" description="Image height" />
+				<field name="item_image_background" type="text" default="#FFFFFF" label="Image background" description="The default background of image." />
+				<field name="item_image_function" type="sjthumbnailmode" label="Image mode">
+					<option value="none">None</option>
+					<option value="center">Center</option>
+					<option value="fill">Fill</option>
+					<option value="fit">Fit</option>
+					<option value="stretch">Stretch</option>
+				</field>
+
+			</fieldset>		
+			<fieldset name="Efects" label="Efects">
+				<field name="box_text" type="text" default="80" label="Height Box Text" description="" />
+				<field name="line_height" type="text" default="30" label="Line Height Title" description="" />
+				<field name="theme" type="list" default="1" label="Select Themes" description="">
+					<option value="1">Theme 1</option>
+					<option value="2">Theme 2</option>
+					<option value="3">Theme 3</option>
+					<option value="4">Theme 4</option>
+					<option value="5">Theme 5</option>
+				</field>
+				<field name="link_target" type="list" default="_self" label="Open Link" description="The Type shows when you click on the link">
+					<option value="_blank">New Window</option>
+					<option value="_self">Same Window</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="include_jquery" type="radio" default="1" label="Include jQuery" description="Do you want include jQuery library?">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>				
+				<field name="owncache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

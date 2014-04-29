@@ -1,0 +1,570 @@
+/* CSS Document */
+/* -----------------------*/
+/*     General style      */
+/* -----------------------*/
+a, 
+span.separator,
+div.userBlock h2,
+div.itemListCategory h2,
+h1.componentheading, .componentheading {
+	color:#ff7e00;
+}
+/* Pagination style */
+ul.pagination li{
+	color:#999;
+}
+ul.pagination li strong {
+    background-image:url(../../images/black/paging-ll.png.png);
+}
+ul.pagination a {
+    background-image: url(../../images/black/paging-lr.png);
+    color: #ff7e00;
+}
+
+ul.pagination li strong:hover a{
+	color:#FFF;
+}
+ul.pagination li span.isnum{
+	background-image: url(../../images/black/paging-nl.png);
+}
+ul.pagination li span.isnum span{
+	background-image: url(../../images/black/paging-nr.png);
+	color: #FFF;
+}
+ul.pagination li span{
+	color:#999;
+}
+/* -----------------------------*/
+/*     Module variations        */
+/* -----------------------------*/
+/* Suffix class: _menu */
+
+.moduletable_menu ul li{
+	background-color:#ff9633;
+	border-color:#ffb570;
+}
+.moduletable_menu ul li a,
+.moduletable_menu ul li .separator{
+	color:#FFF;
+}
+.moduletable_menu ul li.active,
+.moduletable_menu ul li.active li{
+	background-color:#ff7c00;
+}
+.moduletable_menu ul li.active a,
+.moduletable_menu ul li.active .separator{
+	border-color: #ffbd7f;
+}
+.moduletable_menu ul li.active li a,
+.moduletable_menu ul li.active li .separator{
+	color:#c8eaff;
+}
+/* Suffix class: bg-title1 */
+
+.moduletable.bg-title1 h3 span.title{
+	background-color:#ffa200;
+}
+/* Suffix class: bg-title2 */
+.moduletable.bg-title2 h3 span.title{
+	background-image:url(../../images/black/bg-title2-h3.gif);
+}
+/* Suffix class: bg-content1 */
+.moduletable.bg-content1{
+	border-color:#cdcdcd;
+}
+.moduletable.bg-content1 h3 span.title{
+	background-image:url(../../images/black/bg-content1-h3.gif);;
+}
+.moduletable.bg-content1 .yt-mod-mainbox{
+	background-color:#fff5e3;
+}
+/* Suffix class: bg-content2 */
+.moduletable.bg-content2{
+	border-color:#CCC;
+	background-image:url(../../images/black/bg-content2-content.gif);
+}
+.moduletable.bg-content2 h3 span.title{
+	background-color:#ff7c00;
+}
+/* Suffix class: bg-content3 */
+.moduletable.bg-content3{
+	border-color:#CCC;
+}
+
+.moduletable.badge-new, 
+.moduletable.badge-hot, 
+.moduletable.badge-top, 
+.moduletable.badge-soon, 
+.moduletable.badge-cool, 
+.moduletable.badge-best{
+	border-color:#CCC;
+}
+/* ----------------------------*/
+/*     Block: yt-header        */
+/* ----------------------------*/
+#yt_header{
+	background:#222;
+}
+#yt_header .yt-main{
+	background-image:url(../../images/black/head.jpg);;
+}
+.black.rtl #header1 ul li.yt-register a.register-switch,
+#header1 ul li.yt-login a.login-switch{
+	background-image:url(../../images/black/mod_login_item1.png);
+}
+.black.rtl #header1 ul li.yt-login a.login-switch,
+#header1 ul li.yt-register a.register-switch{
+	background-image:url(../../images/black/mod_login_item2.png);
+}
+
+#yt_login_box, 
+#yt-user-reg{
+	background-image: url(../../images/black/menuwrap-sub-bg.png);
+}
+/* ----------------------------*/
+/*     Block: yt-menuwrap      */
+/* ----------------------------*/
+#yt_menuwrap{
+	background-image:url(../../images/black/menu-bg.gif);
+}
+.black ul.navirtl li.level1,
+.black ul.navi li.level1{
+	background-image:url(../../images/black/menuwrap-li1.gif);
+}
+.black ul.navirtl div.level1.separator, 
+.black ul.navirtl a.level1,
+.black ul.navi div.level1.separator, 
+.black ul.navi a.level1{
+	color:#FFF;
+}
+.black ul.navirtl ul,
+.black ul.navi ul {
+    background-image: url(../../images/black/menuwrap-sub-bg.png);
+}
+.black ul.navirtl li.level1.active div.separator.level1, 
+.black ul.navirtl li.level1.active a.level1,
+.black ul.navirtl li.level1.hover div.separator.level1,
+.black ul.navirtl li.level1.hover a.level1,
+.black ul.navi li.level1.active div.separator.level1, 
+.black ul.navi li.level1.active a.level1,
+.black ul.navi li.level1.hover div.separator.level1,
+.black ul.navi li.level1.hover a.level1 {
+	color: #FFF;
+	background-image:url(../../images/black/menu-bg-item-ov.gif);
+}
+.black ul.navirtl li.level1.first.active div.separator.level1, 
+.black ul.navirtl li.level1.first.active a.level1,
+.black ul.navirtl li.level1.first.hover div.separator.level1,
+.black ul.navirtl li.level1.first.hover a.level1,
+.black ul.navi li.level1.first.active div.separator.level1, 
+.black ul.navi li.level1.first.active a.level1,
+.black ul.navi li.level1.first.hover div.separator.level1,
+.black ul.navi li.level1.first.hover a.level1 {
+	background-image:url(../../images/black/home.png);
+}
+.black ul.navirtl div.separator.level2, 
+.black ul.navirtl a.level2,
+.black ul.navi div.separator.level2, 
+.black ul.navi a.level2{
+	color:#000;
+}
+.black ul.navirtl li.level2.hover div.separator.level2, 
+.black ul.navirtl li.level2.hover a.level2,
+.black ul.navirtl li.level2.active div.separator.level2, 
+.black ul.navirtl li.level2.active a.level2,
+.black ul.navi li.level2.hover div.separator.level2, 
+.black ul.navi li.level2.hover a.level2,
+.black ul.navi li.level2.active div.separator.level2, 
+.black ul.navi li.level2.active a.level2{
+	color:#ff7e00;
+}
+
+.black ul.navirtl div.separator.level3, 
+.black ul.navirtl div.separator.level4, 
+.black ul.navirtl div.separator.level5, 
+.black ul.navirtl div.separator.level6, 
+.black ul.navirtl div.separator.level7, 
+.black ul.navirtl div.separator.level8, 
+.black ul.navirtl div.separator.level9, 
+.black ul.navirtl a.level3, 
+.black ul.navirtl a.level4, 
+.black ul.navirtl a.level5, 
+.black ul.navirtl a.level6, 
+.black ul.navirtl a.level7, 
+.black ul.navirtl a.level8, 
+.black ul.navirtl a.level9,
+
+.black ul.navi div.separator.level3, 
+.black ul.navi div.separator.level4, 
+.black ul.navi div.separator.level5, 
+.black ul.navi div.separator.level6, 
+.black ul.navi div.separator.level7, 
+.black ul.navi div.separator.level8, 
+.black ul.navi div.separator.level9, 
+.black ul.navi a.level3, 
+.black ul.navi a.level4, 
+.black ul.navi a.level5, 
+.black ul.navi a.level6, 
+.black ul.navi a.level7, 
+.black ul.navi a.level8, 
+.black ul.navi a.level9{
+	color:#000;
+}
+
+.black ul.navirtl li.level3.hover div.separator.level3, 
+.black ul.navirtl li.level4.hover div.separator.level4, 
+.black ul.navirtl li.level5.hover div.separator.level5, 
+.black ul.navirtl li.level6.hover div.separator.level6, 
+.black ul.navirtl li.level7.hover div.separator.level7, 
+.black ul.navirtl li.level8.hover div.separator.level8, 
+.black ul.navirtl li.level9.hover div.separator.level9, 
+.black ul.navirtl li.level3.hover a.level3, 
+.black ul.navirtl li.level4.hover a.level4, 
+.black ul.navirtl li.level5.hover a.level5, 
+.black ul.navirtl li.level6.hover a.level6, 
+.black ul.navirtl li.level7.hover a.level7, 
+.black ul.navirtl li.level8.hover a.level8, 
+.black ul.navirtl li.level9.hover a.level9,
+
+.black ul.navi li.level3.hover div.separator.level3, 
+.black ul.navi li.level4.hover div.separator.level4, 
+.black ul.navi li.level5.hover div.separator.level5, 
+.black ul.navi li.level6.hover div.separator.level6, 
+.black ul.navi li.level7.hover div.separator.level7, 
+.black ul.navi li.level8.hover div.separator.level8, 
+.black ul.navi li.level9.hover div.separator.level9, 
+.black ul.navi li.level3.hover a.level3, 
+.black ul.navi li.level4.hover a.level4, 
+.black ul.navi li.level5.hover a.level5, 
+.black ul.navi li.level6.hover a.level6, 
+.black ul.navi li.level7.hover a.level7, 
+.black ul.navi li.level8.hover a.level8, 
+.black ul.navi li.level9.hover a.level9,
+
+.black ul.navirtl li.level3.active div.separator.level3, 
+.black ul.navirtl li.level4.active div.separator.level4, 
+.black ul.navirtl li.level5.active div.separator.level5, 
+.black ul.navirtl li.level6.active div.separator.level6, 
+.black ul.navirtl li.level7.active div.separator.level7, 
+.black ul.navirtl li.level8.active div.separator.level8, 
+.black ul.navirtl li.level9.active div.separator.level9, 
+.black ul.navirtl li.level3.active a.level3, 
+.black ul.navirtl li.level4.active a.level4, 
+.black ul.navirtl li.level5.active a.level5, 
+.black ul.c li.level6.active a.level6, 
+.black ul.navirtl li.level7.active a.level7, 
+.black ul.navirtl li.level8.active a.level8, 
+.black ul.navirtl li.level9.active a.level9,
+
+.black ul.navi li.level3.active div.separator.level3, 
+.black ul.navi li.level4.active div.separator.level4, 
+.black ul.navi li.level5.active div.separator.level5, 
+.black ul.navi li.level6.active div.separator.level6, 
+.black ul.navi li.level7.active div.separator.level7, 
+.black ul.navi li.level8.active div.separator.level8, 
+.black ul.navi li.level9.active div.separator.level9, 
+.black ul.navi li.level3.active a.level3, 
+.black ul.navi li.level4.active a.level4, 
+.black ul.navi li.level5.active a.level5, 
+.black ul.navi li.level6.active a.level6, 
+.black ul.navi li.level7.active a.level7, 
+.black ul.navi li.level8.active a.level8, 
+.black ul.navi li.level9.active a.level9{
+	color:#ff7e00;
+}
+
+/* css menu */
+.black ul.navirtl li.level1:hover div.separator.level1,
+.black ul.navirtl li.level1:hover a.level1,
+.black ul.navi li.level1:hover div.separator.level1,
+.black ul.navi li.level1:hover a.level1 {
+	color: #FFF;
+	background-image:url(../../images/black/menu-bg-item-ov.gif);
+}
+.black ul.navirtl li.level2:hover div.separator.level2,
+.black ul.navirtl li.level2:hover a.level2,
+.black ul.navi li.level2:hover div.separator.level2,
+.black ul.navi li.level2:hover a.level2 {
+	color: #ff7e00;
+}
+.black ul.navirtl li.level3:hover div.separator.level3,
+.black ul.navirtl li.level4:hover div.separator.level4,
+.black ul.navirtl li.level5:hover div.separator.level5,
+.black ul.navirtl li.level6:hover div.separator.level6,
+.black ul.navirtl li.level7:hover div.separator.level7,
+.black ul.navirtl li.level8:hover div.separator.level8,
+.black ul.navirtl li.level9:hover div.separator.level9,
+.black ul.navirtl li.level3:hover a.level3,
+.black ul.navirtl li.level4:hover a.level4,
+.black ul.navirtl li.level5:hover a.level5,
+.black ul.navirtl li.level6:hover a.level6,
+.black ul.navirtl li.level7:hover a.level7,
+.black ul.navirtl li.level8:hover a.level8,
+.black ul.navirtl li.level9:hover a.level9, 
+
+.black ul.navi li.level3:hover div.separator.level3,
+.black ul.navi li.level4:hover div.separator.level4,
+.black ul.navi li.level5:hover div.separator.level5,
+.black ul.navi li.level6:hover div.separator.level6,
+.black ul.navi li.level7:hover div.separator.level7,
+.black ul.navi li.level8:hover div.separator.level8,
+.black ul.navi li.level9:hover div.separator.level9,
+.black ul.navi li.level3:hover a.level3,
+.black ul.navi li.level4:hover a.level4,
+.black ul.navi li.level5:hover a.level5,
+.black ul.navi li.level6:hover a.level6,
+.black ul.navi li.level7:hover a.level7,
+.black ul.navi li.level8:hover a.level8,
+.black ul.navi li.level9:hover a.level9 {
+	color: #ff7e00;
+}
+/* mega menu */
+.black ul.navirtl div.mega-content,
+.black ul.navi div.mega-content{
+	background-image: url(../../images/black/menuwrap-sub-bg.png);
+}
+/* dropline */
+.black ul.navirtl ul.level2 div.fxcontent,
+.black ul.navi ul.level2 div.fxcontent{
+	background-image: url(../../images/black/menuwrap-sub-bg.png);
+}
+.black ul.navirtl li.level1:hover a.level1,
+.black ul.navirtl li.level1:hover .separator.level1,
+.black ul.navi li.level1:hover a.level1,
+.black ul.navi li.level1:hover .separator.level1{
+	color: #FFF;
+	background-image:url(../../images/black/menu-bg-item-ov.gif);
+}
+.black ul.navirtl div.mega-module h3,
+.black ul.navi div.mega-module h3{
+	color:#000;
+}
+/* ----------------------------*/
+/*     Block: content          */
+/* ----------------------------*/
+.black #ytc-layoutleft-tab-container .tab-inner-left{
+	background:#f0f0f0
+}
+.black #ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li a{
+	color:#000;
+}
+.black #ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li.active a{
+	color:#ff7e00;
+}
+.black #tabslider-text-pro .title1 a{
+	color:#000;
+}
+.black div #layoutleft_num_button ul li{
+	background:url(../../images/black/paging-button-ajaxtab.png) no-repeat top left;
+}
+.black div #layoutleft_num_button ul li:hover{
+	background-position:0 -6px;
+}
+/* ----------------------------*/
+/*     Block: yt-new1wrap      */
+/* ----------------------------*/
+#yt_new1wrap #user3 .yt-position-inner {
+    background: #f0f0f0;
+}
+.black .yt-yttitleflash .sliderwrapper .contentdiv span{
+	color:#ff7e00;
+}
+.black .yt-titleflash-pagination{
+	background:#222;
+}
+#yt_new1wrap .moduletable h3 a{
+	color:#ff7e00
+}
+.black .yt_frontpage .normal_items_theme4 a strong{
+	color:#000 !important;
+}
+.black .mootabs_title{
+	background:#f0f0f0;
+}
+.black .mootabs_title li{
+	border-color:#f0f0f0;
+}
+.black .mootabs_title li.active,
+.black .mootabs_panel{
+	border-color:#CCC;
+}
+.black .post-inner a.readmore{
+	color:#ff7e00
+}
+
+
+/* ----------------------------*/
+/*     Block: yt-slider1       */
+/* ----------------------------*/
+.black .yt_article_slider.yt_so_article_theme5 {
+    background: #f0f0f0;
+}
+.black .yt_so_article_theme5 .so_item{
+	border-color:#CCC;
+}
+.black .so_navigation_hor .so_pre_hor_theme5{
+	background-image:url(../../images/black/pre-so-article-t5.png);
+}
+.black .so_navigation_hor .so_next_hor_theme5{
+	background-image:url(../../images/black/next-so-article-t5.png);
+}
+.black .yt_so_article_theme5 .so_description{
+	color:#000;
+}
+/* ----------------------------*/
+/*     Block: yt-slider2       */
+/* ----------------------------*/
+#yt_slider2{
+	background:#333 url(../../images/black/das-line-bg.gif) repeat-x top left;
+}
+.black .so_slider_content .so_item_theme3,
+.black .yt_so_article_theme6 .so_content{
+	background:#5c5c5c;
+}
+.black .so_navigation_hor .so_pre_hor_theme6 {
+    background: url(../../images/black/pre-so-article-t6.png);
+}
+.black .so_navigation_hor .so_next_hor_theme6 {
+    background: url(../../images/black/next-so-article-t6.png);
+}
+/* ----------------------------*/
+/*     Block: yt-navcontent    */
+/* ----------------------------*/
+.nav-site li a{
+	color:#666;
+}
+.name-site .name{
+	color:#ff7e00;
+}
+.name-site .dotcom {
+    color: #CCCCCC;
+}
+/* ----------------------------*/
+/*     Block: yt-new2wrap      */
+/* ----------------------------*/
+#yt_new2wrap {
+	background:#333 url(../../images/black/das-line-bg.gif) repeat-x top left;
+}
+.black .yt-contentcategory .title a{
+	color:#ff7e00 !important;
+}
+#yt_new2wrap .moduletable h3 span.title{
+	color:#ff7e00
+}
+
+/* ----------------------------*/
+/*     Block: yt-footnav       */
+/* ----------------------------*/
+
+#yt_component .component-inner {
+    border-color:#CCCCCC;
+}
+#yt_footnav {
+    background:#FF7E00;
+}
+#yt_footnav ul.menu li a, 
+#yt_footnav ul.menu li .separator {
+    color: #FFF2CB;
+}
+ul.yt-fontsize li{
+	background-image:url(../../images/black/fontsize.png);
+}
+/* ----------------------------*/
+/*     Block: content          */
+/* ----------------------------*/
+#breadcrumb {
+    background-color:#F0F0F0;
+}
+#breadcrumb .breadcrumbs a{
+	color:#ff7e00;
+}
+
+
+/* module in content */
+#content #content_left .moduletable, 
+#content #content_left .moduletable_menu, 
+#content #content_right .moduletable, 
+#content #content_right .moduletable_menu{
+	border-color:#CCC;
+}
+#content_main .yt_container_horz,
+#content_main .yt-content-simpletabs{
+	border-color:#CCC;
+}
+/* mega-news */
+.black div.yt_categories_nav ul.yt_categories_nav li.selected span{
+	color:#ff7e00;
+}
+#content_main div.yt_item_title span,
+#content_main div.yt_list_others > ul > li a{
+	color:#000;
+}
+/* other */
+.black .yt-content-simpletabs .theme1 .tabs li a.current{
+	background-image:url(../../images/black/title-ctst-active.gif);
+	color:#ff7e00 !important;
+}
+.black .title-article,
+.black .yt-content-simpletabs .article_title{
+	color:#000;
+}
+.black .yt-content-simpletabs .read_more a{
+	color:#ff7e00
+}
+.black .yt-content-simpletabs .articles li{
+	background-image:url(../../images/black/article-ctsbt.gif);
+}
+.black .article_desc{
+	color:#333 !important;
+}
+.black .yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title a span{
+	color:#000 !important;
+}
+.black .yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore a{
+	color:#ff7e00;
+}
+.black .yt-title-scroll {
+    background-image: url(../../images/black/title-scrollbar.png);
+}
+.black .jspArrowLeft {
+    background-image: url(../../images/black/bk_scrol_left_theme_horz.png);
+}
+.black .jspArrowRight {
+    background-image: url(../../images/black/bk_scrol_right_theme_hroz.png);
+}
+.black .jspTrack {
+    background-image: url(../../images/bk_scrol_center_theme_horz.png);
+}
+.black .jspDrag {
+    background-image: url(../../images/black/scrol_center_theme_horz.png);
+}
+
+.black .jspDrag .jspDragRight {
+    background-image: url(../../images/black/scrol_center_theme_horz_r.png);
+}
+.black .jspDrag .jspDragLeft {
+    background-image: url(../../images/black/scrol_center_theme_horz_l.png);
+}
+.black.rtl .yt-position-inner .jspHorizontalBar .jspArrow.jspArrowRight {
+    background-image: url(../../images/black/bk_scrol_right_theme_hroz_rtl.png);
+}
+.black.rtl .yt-position-inner .jspHorizontalBar .jspArrow.jspArrowLeft {
+	 background-image: url(../../images/black/bk_scrol_left_theme_horz_rtl.png);
+}
+.black.rtl .yt-position-inner .yt-title-scroll{
+	background-image: url(../../images/black/title-scrollbar_rtl.png);
+}
+.black .yt-accordion-content .yt-accordion-readmore a,
+.black h3.yt-toggler.open.first, 
+.black h3.open{
+	color:#ff7e00;
+}
+.black h3.open span {
+    background-image: url(../../images/black/arrow_open.png);
+}
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+/* CSS Document */
+.gray #yt_header h1.logo a{
+	background:url(../../images/gray/logo.png) no-repeat left top;
+}
+.gray #yt_top .yt-main {
+	background:url(../../images/gray/bg-top.gif) repeat-x left bottom;
+}
+.gray #yt_top .yt-main .yt-main-in1 {
+    border-left: 1px solid #CECECE;
+}
+.gray #yt_top .yt-main .yt-main-in1 .yt-main-in2 {
+    border-right: 1px solid #CECECE;
+}
+.gray #yt_menu .yt-main-in1 {
+    background: #CECECE;
+}
+.gray #yt_login-top, 
+.gray #yt_register{
+    border: 1px solid #CECECE;
+	border-top:none;
+}
+/* Block menu */
+.gray ul.navi ul,
+.gray ul.navirtl ul {
+    background: #CECECE;
+	border:none;
+}
+.gray ul.navi div.level1.separator, 
+.gray ul.navi a.level1,
+.gray ul.navirtl div.level1.separator, 
+.gray ul.navirtl a.level1{
+    color: #000000;
+    text-shadow: 1px 1px 1px #FFFFFF;
+	text-transform:uppercase;
+}
+.rtl.gray  #content .nomal_content_normal a {
+    background: url("../../images/gray/bg-a-bottom-content_rtl.gif") no-repeat scroll right center;
+}
+.ltr.gray #content .nomal_content_normal a {
+    background: url("../../images/gray/bg-a-bottom-content.gif") no-repeat scroll left center;
+}
+.gray ul.navi ul li,
+.gray ul.navirtl ul li {
+    background: none;
+	border-top: 1px solid #666;
+}
+.gray ul.navi div.mega-group div.mega-group-content > ul.subnavi > li,
+.gray ul.navirtl div.mega-group div.mega-group-content > ul.subnavi > li  {
+    border: none;
+}
+.gray ul.navi div.mega-group div.mega-group-title,
+.gray ul.navirtl div.mega-group div.mega-group-title {
+    border-color: #666;
+}
+.gray ul.navi div.mega-group div.mega-group-title div.separator, 
+.gray ul.navi div.mega-group div.mega-group-title a,
+.gray ul.navirtl div.mega-group div.mega-group-title div.separator, 
+.gray ul.navirtl div.mega-group div.mega-group-title a {
+    color: #333;
+}
+.gray ul.navi div.mega-content,
+.gray ul.navirtl div.mega-content {
+    background: #EDEDED;
+}
+.gray ul.navi div.mega-content-inner,
+.gray ul.navirtl div.mega-content-inner{
+	background: #CECECE;
+}
+.gray ul.navi div.separator.level2, 
+.gray ul.navi a.level2,
+.gray ul.navirtl div.separator.level2, 
+.gray ul.navirtl a.level2{
+	color:#333;
+	text-shadow:none;
+}
+.gray ul.navi div.separator.level3, 
+.gray ul.navi div.separator.level4, 
+.gray ul.navi div.separator.level5, 
+.gray ul.navi div.separator.level6, 
+.gray ul.navi div.separator.level7, 
+.gray ul.navi div.separator.level8, 
+.gray ul.navi div.separator.level9, 
+.gray ul.navi a.level3, 
+.gray ul.navi a.level4, 
+.gray ul.navi a.level5, 
+.gray ul.navi a.level6, 
+.gray ul.navi a.level7, 
+.gray ul.navi a.level8, 
+.gray ul.navi a.level9,
+.gray ul.navirtl div.separator.level3, 
+.gray ul.navirtl div.separator.level4, 
+.gray ul.navirtl div.separator.level5, 
+.gray ul.navirtl div.separator.level6, 
+.gray ul.navirtl div.separator.level7, 
+.gray ul.navirtl div.separator.level8, 
+.gray ul.navirtl div.separator.level9, 
+.gray ul.navirtl a.level3, 
+.gray ul.navirtl a.level4, 
+.gray ul.navirtl a.level5, 
+.gray ul.navirtl a.level6, 
+.gray ul.navirtl a.level7, 
+.gray ul.navirtl a.level8, 
+.gray ul.navirtl a.level9 {
+	color:#333;
+	text-shadow:none;	
+}
+.gray ul.navi li.level2.active div.separator.level2, 
+.gray ul.navi li.level2.active a.level2,
+.gray ul.navirtl li.level2.active div.separator.level2, 
+.gray ul.navirtl li.level2.active a.level2 {
+    color: #fff;
+    text-shadow: none;
+}
+.gray ul.navi div.separator.level3.active, 
+.gray ul.navi div.separator.level4.active, 
+.gray ul.navi div.separator.level5.active, 
+.gray ul.navi div.separator.level6.active, 
+.gray ul.navi div.separator.level7.active, 
+.gray ul.navi div.separator.level8.active, 
+.gray ul.navi div.separator.level9.active, 
+.gray ul.navi a.level3.active, 
+.gray ul.navi a.level4.active, 
+.gray ul.navi a.level5.active, 
+.gray ul.navi a.level6.active,
+.gray ul.navi a.level7.active, 
+.gray ul.navi a.level8.active, 
+.gray ul.navi a.level9.active,
+.gray ul.navirtl div.separator.level3.active, 
+.gray ul.navirtl div.separator.level4.active, 
+.gray ul.navirtl div.separator.level5.active, 
+.gray ul.navirtl div.separator.level6.active, 
+.gray ul.navirtl div.separator.level7.active, 
+.gray ul.navirtl div.separator.level8.active, 
+.gray ul.navirtl div.separator.level9.active, 
+.gray ul.navirtl a.level3.active, 
+.gray ul.navirtl a.level4.active, 
+.gray ul.navirtl a.level5.active, 
+.gray ul.navirtl a.level6.active,
+.gray ul.navirtl a.level7.active, 
+.gray ul.navirtl a.level8.active, 
+.gray ul.navirtl a.level9.active {
+    color: #fff;
+    text-shadow: none;
+}
+.gray .yt-menus ul li ul li.first{ border-color: #666}
+.gray .yt-menus ul li ul li.first{border-color:#666666;}
+.gray #yt_menu .yt-main{
+	background:url(../../images/gray/bg-menu-head.gif) no-repeat top left;
+}
+.gray.rtl #yt_menu .yt-main{
+	background:url(../../images/gray/bg-menu-head_rtl.gif) no-repeat top right;
+}
+.gray .moduletable h3 {
+    background:#CECECE;
+    color: #000000;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+.gray .yt_frontpage .main_content span {
+    background: none;
+}
+.gray #yt_footer .yt-main {
+    border-top: 2px solid #CECECE;
+}
+.gray #yt_botslwrap2 .yt-main {
+    border-top: 4px solid #CECECE;
+}
+.gray .moduletable ul.menu li.active > a {
+    color: #000;
+}
+.gray .mootabs_title {
+    background: #CECECE;
+}
+.gray div.moduletabs.top-position div.tabs-container ul.tabs li .tab.selected {
+    background: url(../../images/gray/tab-active-l.gif) no-repeat left top;
+}
+.gray div.moduletabs.top-position div.tabs-container ul.tabs li .tab.selected .tabs-bg {
+    background: url(../../images/gray/tab-active-r.gif) no-repeat right top;
+}
+.gray div.moduletabs.top-position div.tabs-container ul.tabs li .tab {
+    background: url(../../images/gray/tab-l.gif) no-repeat left top;
+
+}
+.gray div.moduletabs.top-position div.tabs-container ul.tabs li .tab .tabs-bg {
+	background:url(../../images/gray/tab-r.gif) no-repeat right top;
+}

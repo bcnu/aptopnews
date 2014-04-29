@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout type="main-right">	
+	<head>		
+	</head>
+	<groups>
+		<group width="" height="">footnav</group>
+		<group width="" height="">slideshow-l</group>
+		<group width="310px" height="">right</group>
+	</groups>
+	<blocks>
+					
+		<header order="2" id="yt_header">
+			<positions>
+				<position width="500px" height="" type="feature">@logo</position>
+				<position width="" height="" type="modules">header1</position>
+				<position width="210px" type="modules">header2</position>
+			</positions>
+		</header>
+		<menu order="3" id="yt_menuwrap" autosize="1">
+			<positions>
+				<position width="" type="feature">@menu</position>	
+			</positions>
+		</menu>
+				
+		<slideshow order="4" id="yt_slideshow">
+			<positions>
+				<position height="" width="" style="xhtml" type="modules">slide_show</position>
+			</positions>
+		</slideshow>
+		
+		<content order="6" id="content" showDivTop="0" showDivBottom="0">
+			<positions>						  
+				<position column='yt_col1' width="" colspan="1" group="main" type="modules">breadcrumb</position>	
+				<position column='yt_col1' width="" colspan="0" group="main" type="feature">@fontsize</position>
+				<position column='yt_col1' width="" colspan="1" group="main" type="message"></position>
+				<position column='yt_col1' width="" colspan="1" group="main" style="ytmod" type="modules">mega-news</position>	
+				<position column='yt_col1' width="" colspan="1" group="main" type="component">component</position>
+				<position column='yt_col1' width="" colspan="1" group="main" style="ytmod" type="modules">m1</position>		
+				<position column='yt_col1' width="" colspan="0" group="main" style="ytmod" type="modules">m2</position>
+				<position column='yt_col1' width="" colspan="0" group="main" style="ytmod" type="modules">m3</position>
+				<position column='yt_col2' width="" colspan="1" group="right" style="ytmod" type="modules">right</position>				
+			</positions>
+		</content>
+		<breadcump order="7" id="yt_navcontent">
+			<positions>
+				<position width="800px" type="html">
+					<![CDATA[
+						<div class="name-site"><span class="name">SmartNews</span><span class="dotcom">.com</span></div>
+					]]>
+				</position>
+				<position type="html">
+					<![CDATA[
+						<ul class="nav-site">
+							<li class="back-totop"><a id="yt-totop" href="#top">Back to top</a></li>
+							<li class="site-map"><a href="#">Site map</a></li>
+						</ul>
+					]]>
+				</position>
+			</positions>
+		</breadcump>
+		<slider2 order="8" id="yt_slider2">
+			<positions>
+				<position height="" width="" style="xhtml" type="modules">user10</position>
+			</positions>
+		</slider2>
+		
+		<spotlight2 order="9" id="yt_new2wrap">
+			<positions>
+				<position height="" width="" style="ytmod" type="modules">user11</position>
+				<position height="" width="180px" style="ytmod" type="modules">user12</position>
+			</positions>
+		</spotlight2>
+		<footer1 order="10" id="yt_footnav">
+			<positions>
+				<position width="" style="" type="modules">footnav</position>
+				<position width="165px" type="feature">@switch_modes</position>
+			</positions>
+		</footer1>				
+		<footer2 order="11" id="yt_footer">
+			<positions>
+				<position width="1000px" type="feature">@copyright</position>						
+			</positions>
+		</footer2>										
+	</blocks>
+</layout>		

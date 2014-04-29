@@ -1,0 +1,344 @@
+#ytc-layoutleft-tab-container #tab_inner_left{
+	margin:0;
+	/*height:312px;*/
+	}
+	
+#ytc-layoutleft-tab-container .tab-inner-left{
+	float:left;
+	width:150px;
+	margin-top:1px;
+	height:205px;
+	background:#F3F5FF;
+	
+}
+
+#ytc-layoutleft-tab-container .tab-inner-right{
+	float:left;
+	background:#FFFFFF;
+	margin:0px 0 0 10px;
+	height:206px !important;
+	overflow:hidden;
+	/*height:305px;*/
+}
+#layoutleft_jCarouselLiteDemo .carousel  {
+    margin: 0 0 0 10px;
+    position: relative;
+    background: #FFFFFF;     
+}
+#layoutleft_jCarouselLiteDemo .digg {
+    position: absolute;
+    left: 610px;
+    top: 110px;
+}
+
+#layoutleft_jCarouselLiteDemo .demo em {
+    color: #FF3300;
+    font-weight: bold;
+    font-size: 60%;        
+    font-style: normal;
+}
+#layoutleft_jCarouselLiteDemo .carousel button { /*Don't remove this. we still use this for individual demos. only the front pages use images as of now*/
+    float: left;
+}              
+#ytc-layoutleft-tab-container a.prev,  #ytc-layoutleft-tab-container a.next {
+    display: block;
+    width: 26px;
+    height: 25px;
+    margin-top: 1px;
+    text-decoration: none;
+	background:url("../image/sprite_b.png") no-repeat scroll -1px -1px transparent;
+	text-indent:-1500px;
+	position:absolute;
+}
+#ytc-layoutleft-tab-container a.next {
+	background:url("../image/sprite_b.png") no-repeat scroll -1px -28px transparent;
+	right:40px;
+}
+#ytc-layoutleft-tab-container a.prev{
+	right:5px;
+}
+#ytc-layoutleft-tab-container a.next:hover {
+}
+#ytc-layoutleft-tab-container a.prev:hover {
+}
+#ytc-layoutleft-tab-container a.pre_v2, #ytc-layoutleft-tab-container a.next_v2 {
+    display: block;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    background-image: url("../image/pre_v2.png");
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    padding-right: 8px;
+}
+#ytc-layoutleft-tab-container a.next_v2 {
+    background-image:url("../image/next_v2.png");
+    background-repeat: no-repeat;
+    
+}
+#ytc-layoutleft-tab-container a.next_v2:hover {
+    background-image: url("../image/next_v2.png");
+}
+#ytc-layoutleft-tab-container a.pre_v2:hover {
+    background-image: url("../image/pre_v2.png");
+}       
+#layoutleft_jCarouselLiteDemo .carousel .jCarouselLite {
+    border-bottom: 1px dashed #d6dee7;
+    float: left;
+    /*background-color: #FFFFFF;*/
+    /* Needed for rendering without flicker */
+    position: relative;
+    visibility: hidden;
+    left: -5000px;
+}
+#layoutleft_jCarouselLiteDemo .carousel ul {
+    margin: 0;
+}
+#layoutleft_jCarouselLiteDemo .carousel li img, #layoutleft_jCarouselLiteDemo .carousel li p {
+    background-color: #fff;
+	border:1px solid #d3dfed;
+	padding:2px;
+   /* margin: 5px;*/
+	/*border-bottom:2px solid #eaeaea;*/
+}
+#layoutleft_jCarouselLiteDemo .widget img {
+    cursor: pointer;
+}
+#layoutleft_jCarouselLiteDemo .mid {
+    margin-left: 80px;
+    width: 400px;
+    height: 300px;
+}
+
+#layoutleft_jCarouselLiteDemo .vertical .jCarouselLite {   /* so that in IE 6, the carousel div doesnt expand to fill the space */
+    width: auto;
+    height: 520px;
+}
+#layoutleft_jCarouselLiteDemo .imageSlider li img, 
+#layoutleft_jCarouselLiteDemo .imageSlider li p, 
+#layoutleft_jCarouselLiteDemo .imageSliderExt li img , 
+#layoutleft_jCarouselLiteDemo .imageSliderExt li p {
+    width: 400px;
+    height: 300px;
+}
+#tabslider-text-pro div.yt_tabs_price{
+    font-size: 11px;
+}            
+/*_____________________________________________ End - Projects - layoutleft_jCarouselLiteDemo _____________________________________________*/
+#layoutleft_border_tab{
+    overflow:hidden;
+	background:#FFFFFF;
+	/*border:1px solid #d25a0b;*/
+	/*border-top: 6px solid #d25a0b;*/
+}
+
+.sidetops{
+    padding-top: 10px; 
+    padding-bottom: 0px;
+}
+
+.tabslider_button_img_selected{
+	margin:3px 2px 5px;
+	height:16px;
+	width:18px;
+    color: #FFFFFF;
+    background: #d25a0c; 
+
+}
+.tabslider_button_img{
+    cursor: pointer;
+	margin:3px 2px 5px;
+	height:16px;
+	width:18px;
+    color: #d25a0c;
+    background:none;
+}
+.pointer_bt{ 
+    cursor: pointer;  
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px !important;
+}
+
+/* edit - update*/
+div #active_img{
+    position: relative;
+}
+#cat_text{
+    float:left;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 5px;
+}
+div #top-slide{
+    float:right;
+    width: 60px;
+    height: 27px;
+	margin-top:-35px;
+	margin-right:10px;
+	position:relative;
+}
+div #layoutleft_num_button{
+   /* float: right;*/
+    margin-right:0;
+	position:absolute;
+	bottom:5px;
+	left:50%;
+	height:6px;
+}
+div #layoutleft_num_button ul li{
+	background:url(../../images/paging-button-ajaxtab.png) no-repeat 0 -6px;
+    list-style: none;
+    float: left;
+	padding:0 ;
+	margin:0 3px;
+	height:6px;
+    width:6px;
+   /* padding-right: 10px;*/
+}
+div #layoutleft_num_button ul li:hover{
+	background-position:0 0;
+}
+div #layoutleft_num_button ul li span{
+	display:none;
+}
+.jCarouselLite ul li{
+	padding:0 0;
+	background: none;
+	min-height:185px !important;
+}
+div #tabslider-text-pro{
+    font-family: Arial, Tahoma, TimeNewRoman, sans-serif;
+    /*margin-left: 4px;*/
+    width:100%;
+    bottom: 5px;
+    color: #000000;
+    display: block;
+/*	position:relative;*/
+	left:0px;
+	padding:0 1px;
+}
+
+#tabslider-text-pro .more-info-left{
+	cursor:pointer;
+	float:right;
+	font-size:10px;
+	font-weight:bold;
+	line-height:16px;
+}
+#tabslider-text-pro .more-info-left a{ 
+	float:right;
+    background: none !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    font-size: 11px !important;
+	/*position:relative;*/
+}
+#tabslider-text-pro .mmore-info-left a:hover{ text-decoration:none;}
+#tabslider-text-pro .title1{ padding:5px 0px 3px; font-size:100%; font-weight:bold;}
+
+#tabslider-text-pro .title1 a{ 
+    text-decoration:none !important;
+    text-transform: none !important;
+    text-align:left !important;
+    background: none !important;
+    padding: 0px !important;
+	color:#135cae;
+}
+#tabslider-text-pro .title1 a:hover{ text-decoration:none;}
+#tabslider-text-pro .title{
+    font-size: 95%;
+    font-weight: bold;
+    padding: 0 3px;  
+}
+#tabslider-text-pro .content{
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-size: 100%;
+    padding: 0 0px;
+	color:#333333;
+}
+
+/*.vmk2_tabslider .title {
+    position: relative;
+}*/
+
+/*.vmk2_tabsliderr .content {
+    position: relative;
+}
+
+.vmk2_tabslider .main-item-left {
+    margin-right: 10px;
+	 
+}
+
+.vmk2_tabsliderr .wrap-items {
+    position: relative;
+    
+}*/
+
+#ytc-layoutleft-tab-container{
+	margin:0;
+	padding:0 0;
+	width:100%;
+	overflow:hidden;
+}
+
+#ytc-layoutleft-tab-container a{ color: #555555;}
+span#tabs-title{ float:left; line-height:34px; margin-left:5px; }
+#tab-2 span#tabs-title{ margin-top:8px; line-height:34px; }
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs{ 
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li #the-firt{ background:none;}
+
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li{ 
+	cursor:pointer;
+	display:block;
+	float:left;
+	/*text-transform:uppercase;
+	font-weight:bold;*/
+	position:relative;
+	width:100%;
+	padding:0 0;
+}
+
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li a{
+	display:block;
+	float:left;
+	line-height:20px;
+	padding:5px;
+}
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li.active a {
+	display:block;
+	float:left;
+	color:#000;
+}
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li a { 
+	color:#006bb9;
+	font-size:100%;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:0 14px;
+	line-height:37px;
+}
+
+/*#ytc-layoutleft-tab-container ul.tabs-tabs li #count-item{ font-size:11px;}*/
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li a:hover{ text-decoration:none;}
+#ytc-layoutleft-tab-container ul.layoutleft_tabs-tabs li.a
+ctive{
+	background:url(../image/tab-bg-activite.gif) repeat top left;
+	color:#2E2D2A;
+}
+
+
+#ytc-layoutleft-tab-container .tabs-content{ margin-top:0px; position:relative; height:206px !important}
+#ytc-layoutleft-tab-container #tab-1, #tab-2, #tab-3{
+	margin-top:0px;
+	background:url("../image/wrap-bot_a.gif") no-repeat scroll left bottom transparent;
+	padding:0;
+	
+}
+

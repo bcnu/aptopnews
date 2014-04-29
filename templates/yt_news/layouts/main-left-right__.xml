@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout type="main-left-right">	
+	<head>	
+	</head>
+	<groups>
+		<group width="335px" height="">right-top</group>
+		<group width="300px" height="">footnav</group>
+	</groups>
+	<blocks>				
+		<top order="1" id="yt_top">
+			<positions>
+				<position width="568px" type="modules">top1</position>
+				<position width="100px" type="feature">@fontsize</position>
+				<position width="300px" type="modules">top2</position>
+			</positions>
+		</top>
+		<header2 order="2" id="yt_header">
+			<positions>
+				<position width="340px" height="95px" type="feature">@logo</position>
+				<position width="318px" height="95px" type="modules">header1</position>
+				<position width="290px" height="95px" style="" type="modules">header2</position>
+			</positions>
+		</header2>
+		<menu order="3" id="yt_menu">
+			<positions>
+				<position width="785px" type="feature">@menu</position>
+				<position width="180px" type="modules">nav2</position>
+			</positions>
+		</menu>		
+		<content order="5" id="content" showDivTop="0" showDivBottom="0">
+			<positions>	
+				<position column="yt_col1" width="" group="main" colspan="1" style="ytmod" type="modules">breadcrumb</position>
+				<position column="yt_col1" width="" group="main" style="xhtml" type="modules">content-top</position>
+				<position column='yt_col1' width="" group="main" colspan="1"  type="message"></position>			
+				<position column="yt_col1" width="" group="main" type="component">component</position>
+				<position column="yt_col1" width="" group="main" style="xhtml" type="modules">content-bottom</position>	
+				<position column="yt_col2" width="" group="right-top" colspan="1" style="xhtml" type="modules">left-right-top</position> 
+				<position column="yt_col2" width="" group="left" style="ytmenubasic" type="modules">left</position>	
+				<position column="yt_col2" width="" group="right" style="xhtml" type="modules">right</position>	
+				<position column="yt_col2" width="" group="right-top" colspan="1" style="xhtml" type="modules">left-right-bottom</position>	
+			</positions>
+		</content>
+		<spotlight1 order="6" id="yt_botslwrap1">
+			<positions>
+				<position width="" style="xhtml" type="modules">user1</position>
+				<position width="" style="xhtml" type="modules">user2</position>
+				<position width="" style="xhtml" type="modules">user3</position>
+			</positions>
+		</spotlight1>	
+		<spotlight2 order="7" id="yt_botslwrap2">
+			<positions>
+				<position width="" style="xhtml" type="modules">user4</position>
+				<position width="" style="xhtml" type="modules">user5</position>
+				<position width="" style="xhtml" type="modules">user6</position>
+			</positions>
+		</spotlight2>
+		<footer1 order="8" id="yt_footer">
+			<positions>
+				<position width="" type="feature">@copyright</position>
+				<position group="footnav" colspan="0" width="" style="" type="modules">footnav</position>
+				<position group="footnav" width="" style="" type="modules">social</position>
+			</positions>
+		</footer1>						
+	</blocks>
+</layout>	

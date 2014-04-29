@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system">
+	<name>plg_system_sjcore</name>
+	<author>YouTech Company</author>
+	<creationDate>December 2011</creationDate>
+	<copyright>Copyright (c) 2009-2012 YouTech Company. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.7.0</version>
+	<description>SJ_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="sjcore">sjcore.php</filename>
+		<filename>index.html</filename>
+		<folder>core</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_sjcore.ini</language>
+		<language tag="en-GB">en-GB.plg_system_sjcore.sys.ini</language>
+	</languages>
+	<config>
+	</config>
+</extension>

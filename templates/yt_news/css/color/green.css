@@ -1,0 +1,121 @@
+/* CSS Document */
+body.green a {
+   color: #478400;
+}
+.green #yt_top .yt-main {
+	background:url(../../images/green/bg-top.gif) repeat-x left bottom;
+}
+.green #yt_top .yt-main .yt-main-in1 {
+    border-left: 1px solid #478400;
+}
+.green #yt_top .yt-main .yt-main-in1 .yt-main-in2 {
+    border-right: 1px solid #478400;
+}
+.green #yt_header h1.logo a{
+	background:url(../../images/green/logo.png) no-repeat left top;
+}
+.green #yt_login-top, 
+.green #yt_register{
+    border: 1px solid #478400;
+	border-top:none;
+}
+/* Block menu */
+.green #yt_menu .yt-main-in1 {
+    background: #478400;
+}
+.green ul.navi ul,
+.green ul.navirtl ul {
+    background: #478400;
+	border:none;
+}
+.green ul.navi ul li,
+.green ul.navirtl ul li {
+    background: none;
+	border-top: 1px solid #CCCCCC;
+}
+.green ul.navi div.mega-group div.mega-group-content > ul.subnavi > li ,
+.green ul.navirtl div.mega-group div.mega-group-content > ul.subnavi > li {
+    border: none;
+}
+.green ul.navi div.mega-content,
+.green ul.navirtl div.mega-content {
+    background: #EDEDED;
+}
+.green ul.navi div.mega-content-inner,
+.green ul.navirtl div.mega-content-inner{
+	background: #478400;
+}
+.green .yt-menus ul li ul li.first{ border-color: #CCCCCC}
+.green #yt_menu .yt-main{
+	background:url(../../images/green/bg-menu-head.gif) no-repeat top left;
+}
+.green.rtl #yt_menu .yt-main{
+	background:url(../../images/green/bg-menu-head_rtl.gif) no-repeat top right;
+}
+.green .moduletable h3 {
+    background:#478400;
+    color: #FFFFFF;
+    text-shadow: 2px 1px #5C5C5C;
+}
+.green .yt_frontpage .main_content span {
+    background: none;
+	text-shadow:none;
+}
+.green #yt_footer .yt-main {
+    border-top: 2px solid #478400;
+}
+.green #yt_botslwrap2 .yt-main {
+    border-top: 4px solid #478400;
+}
+.green .mootabs_title {
+    background: #478400;
+}
+.green .widget-wrap h2 a, .green .widget-wrap h2 {
+	color:#478400;
+}
+.green .yt_news_content .normal_news_content div.nomal_items div.nomal_content_normal strong{
+	color:#066612;
+}
+.green .yt_news_content .normal_news_content div.nomal_items div.nomal_content_normal span {
+   /* color: #478400;*/
+}
+.green .yt_frontpage .nomal_frontpage div.nomal_list .nomal_content strong {
+	color:#478400 !important;
+}
+.green .yt_frontpage .main_frontpage div.main_content h3,
+.green .yt_frontpage .main_frontpage div.main_content span {
+    color: #478400 !important;
+}
+.green .main_content_main h4{
+	color:#066612;
+}
+
+.green .moduletable ul.menu li.active ul li a span, 
+.green .moduletable ul.menu li.active ul li.active ul li a span {
+    color:#478400;
+}
+.green .moduletable ul.menu li.active a span,
+.green .moduletable ul.menu li.active ul li.active a span,
+.green .moduletable ul.menu li.active ul li.active ul li.active a span {
+	color:#000000;
+}
+.green .moduletable ul.menu li a{
+	color:#478400;
+}
+.green .moduletable ul.menu li.active > a {
+    color: #000;
+}
+.green div.moduletabs.top-position div.tabs-container ul.tabs li .tab.selected {
+    background: url(../../images/green/tab-active-l.gif) no-repeat left top;
+}
+.green div.moduletabs.top-position div.tabs-container ul.tabs li .tab.selected .tabs-bg {
+    background: url(../../images/green/tab-active-r.gif) no-repeat right top;
+
+}
+.green div.moduletabs.top-position div.tabs-container ul.tabs li .tab {
+    background: url(../../images/green/tab-l.gif) no-repeat left top;
+
+}
+.green div.moduletabs.top-position div.tabs-container ul.tabs li .tab .tabs-bg {
+	background:url(../../images/green/tab-r.gif) no-repeat right top;
+}

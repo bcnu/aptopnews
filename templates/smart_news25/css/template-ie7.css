@@ -1,0 +1,96 @@
+/* CSS Document */
+
+.button{
+	padding-left:0px;
+	padding-right:0px;
+}
+#yt_footnav ul.menu li,
+ul.pagination li{
+	display:inline !important;
+}
+
+.rtl ul.yt-login-regis li{
+	display:inline;
+}
+
+#header1 ul li{
+	display:inline !important;
+	float:none !important;
+}
+.rtl .yt-position-inner div.yt_item_comment span, 
+.rtl .yt-position-inner div.yt_item_readmore a,
+.rtl div.yt_item_info div.yt_item_nb_view span, 
+.rtl div.yt_item_info div.yt_item_comment span, 
+.rtl div.yt_item_info div.yt_item_created span, 
+.rtl div.yt_item_info div.yt_item_readmore span{
+	display:inline;
+	float:right;
+	width:100%;
+}
+.yt-position-inner .search .button{
+	vertical-align:top !important;
+}
+/*yt-toll*/
+.yt-switch_modes{
+	float:none !important;
+	padding-right:10px;
+}
+#yt_new2wrap .yt-main{
+	padding-bottom:10px;
+}
+
+
+.yt_vm_simpletabs .theme1 .col-two, .theme1 .col-three {position:static !important}
+.yt_vm_simpletabs .theme1 .col-one {position:static !important}
+
+.tab-inner-left.inner_left_multi{
+	height:208px !important;
+}
+#layoutleft_jCarouselLiteDemo .carousel .jCarouselLite{
+	height:186px !important;
+}
+.rtl .yt-fontsize{
+	width:100px;
+}
+/* ----------------------------*/
+/*     Block: yt-menuwrap      */
+/* ----------------------------*/
+ul#meganavigator .mega-col.one .level2 div.separator.level2, 
+ul#meganavigator .mega-col.one .level2 a.level2,
+ul#meganavigator .level3 div.separator, 
+ul#meganavigator .level3 a{
+	min-width:160px;
+}
+/* Typography */
+.rtl ul.yt-typo-list.list-bullet li {
+    overflow:hidden;
+}
+.rtl #yt_component .yt-typo-blocks-wrap .yt-typo-block.last ul {
+    padding: 0 20px 0 14px;
+}
+.yt-typo-blocks-wrap .cols-2 .yt-typo-block {
+    width: 49.9% !important;
+}
+
+.rtl .moduletable,
+.moduletable_menu .yt-mod-mainbox{
+	overflow:hidden;
+}
+
+/* ---------------------------------------*/
+/*    Components (content, k2, vm, ...)   */
+/* ---------------------------------------*/
+/* content component */
+.rtl .buttonheading,
+.rtl .article-tools .buttonheading{
+	width:65px;
+}
+.rtl .yt-accordion-readmore a{
+	float:left
+}
+.rtl .yt-accordion-readmore{
+	float:right;
+}
+.yt-accordion-content{
+	overflow:hidden;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+
+
+	<name>Indic Writer</name>
+	<author>Soft 'N' Web</author>
+	<creationDate>23/07/11</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 Soft 'N' Web. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ronak@softnweb.in</authorEmail>
+	<version>1.0.0</version>
+	<description><![CDATA[<strong>Indic Transliteration Typing Tool</strong><p>At present this tool uses <span><a href="http://www.vishalon.net/IndicResources/PramukhLib.aspx">Pramukh Javascript Library</a>.</span> It converts Roman              characters to their phonetic equivalent in your Indian language</p><p><strong>Currently it supports 9 Indian languages</strong></p><ol>  <li>Bengali (Assamese, Bengali,  Manipuri)</li>  <li>Devanagari (Hindi, Marathi, Sanskrit)</li>  <li>Gujarati</li>  <li>Gurmukhi</li>  <li>Kannada</li>  <li>Malaylam</li>  <li>Oriya</li>  <li>Tamil</li>  <li>Telugu</li></ol><p><strong>How to Use:</strong></p><ol>  <li>Install the Extension</li>  <li>Go to Extension &gt; Module Manager</li>  <li>Select Site</li>  <li>Click on 'Indic Writer'</li>  <li>Enable the Plugin</li>  <li>Select Position</li>  <li>Save module</li> <li>Choose your desired language from the top selection box</li></ol><p style="color:red"><strong>Known Issue:<br /></strong>- Does not work with Rich Text editor while Design mode is turned on.</p><br /> <p> <strong>- Other libraries/APIs will be added soon -</strong></p>]]></description>
+	<files>
+		<filename module="mod_indicwriter">mod_indicwriter.xml</filename>
+		<filename module="mod_indicwriter">mod_indicwriter.php</filename>
+		<filename module="mod_indicwriter">pramukh_lib/pramukhlib.js</filename>
+		<filename module="mod_indicwriter">pramukh_lib/license.txt</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="languagelist" type="list" default="Full List" label="Languages to be Shown" description="">
+					<option value="">Full List</option>
+					<option value="bengali">Bengali</option>
+					<option value="devanagari">Devanagari</option>
+					<option value="gujarati">Gujarati</option>
+					<option value="gurmukhi">Gurmukhi</option>
+					<option value="kannada">Kannada</option>
+					<option value="malayalam">Malayalam</option>
+					<option value="oriya">Oriya</option>
+					<option value="tamil">Tamil</option>
+					<option value="telugu">Telugu</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

@@ -1,0 +1,18 @@
+﻿
+.yt-contentcategory .normal_category ul.normal_content li ul.normal_content_accor{
+   margin-left: 0px;
+   float: left
+    
+}
+.yt-contentcategory .normal_category ul.normal_content li ul.normal_content_accor .num_items{
+   float: left;
+ /*   margin-top: 3px; */
+   margin-left: 2px
+    
+}
+
+.yt-contentcategory .normal_items{      	
+	list-style: none;
+	text-align: left;	
+    float: left
+}

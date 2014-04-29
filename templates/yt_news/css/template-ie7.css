@@ -1,0 +1,32 @@
+/* CSS Document */
+#yt_top{
+	position:relative;
+	z-index:999;
+}
+#yt_header .yt-main{
+	position:relative;
+	z-index:888;
+}
+#yt_menu .yt-main{
+	position:relative; 
+	z-index:777;
+}
+.yt-typo-blocks-wrap .cols-2 .yt-typo-block {
+    width: 49.9%;
+}
+.cols-2 .item{
+	width:49.9%;
+}
+#yt_menu #yt_search .search input.button {
+    padding: 3px 5px !important;
+}
+ul.jclist img {
+    padding: 0 5px 5px 0 !important;
+}
+/*Typography*/
+.rtl ul.yt-typo-list.list-bullet li {
+    overflow:hidden;
+}
+.rtl #yt_component .yt-typo-blocks-wrap .yt-typo-block.last ul {
+    padding: 0 20px 0 14px;
+}

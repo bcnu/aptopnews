@@ -1,0 +1,192 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.yt_container_horz p{
+	line-height:0px;
+}
+
+.jspContainer{
+    padding-left: 0;
+    padding-top: 44px;
+	outline:none !important;
+}
+.jspPane
+{
+	position: relative;
+    display: inline-block;
+    
+}
+.yt_scroll_pane{
+	
+	outline:none !important;
+}
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	/*bottom: 0;*/
+	top:0;
+	left: 5px;
+	width: 100%;
+	height: 29px;
+    padding: 0 0;
+    /*padding-left: 15px;*/
+	/*background: red;*/
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: url(../../images/bk_scrol_center_theme_horz.png) repeat-x;
+	position: relative;
+}
+.title-crool{
+	position:absolute;
+	top:-44px;
+	left:0px;
+	height:29px;
+	background:url(../../images/title-scrollbar.png) no-repeat top left;
+	width:150px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#FFF;
+}
+.jspDrag
+{
+	background: url(../../images/scrol_center_theme_horz.png) left center repeat-x;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.jspDrag .jspDragLeft{
+	background: url(../../images/scrol_center_theme_horz_l.png) no-repeat left center;
+	width:11px;
+	height:29px;
+}
+.jspDrag .jspDragRight{
+	background: url(../../images/scrol_center_theme_horz_r.png) no-repeat right center;
+	width:11px;
+	height:29px;
+	float:right;
+	margin-top:-29px;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+/*.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}*/
+.jspArrowLeft{
+	background: url(../../images/bk_scrol_left_theme_horz.png) no-repeat;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+    width: 35px;
+}
+
+.jspArrowLeft .jspDisabled{
+	background: url(../../images/bk_scrol_left_theme_horz.png) no-repeat !important;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+    width: 20px;
+}
+.yt-title-scroll{
+	background:url(../../images/title-scrollbar.png) no-repeat top left;
+	width:150px;
+	height:29px;
+	line-height:29px;
+	text-align:center;
+	float:left;
+	color:#FFF;
+	font-size:150%;
+	text-transform:uppercase;
+}
+/*.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}*/
+.jspArrowRight{
+	background: url(../../images/bk_scrol_right_theme_hroz.png) no-repeat;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+    /*margin-left: -4px;*/
+    width: 35px;
+}
+
+.jspArrowRight .jspDisabled{
+	background: url(../../images/bk_scrol_right_theme_hroz.png) no-repeat !important;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+    width: 23px;
+}
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	/*width: 23px;*/
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

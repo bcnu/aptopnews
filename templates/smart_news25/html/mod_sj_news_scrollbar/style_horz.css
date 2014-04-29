@@ -1,0 +1,204 @@
+/*
+ * CSS Styles that are used on the jScrollPane demo site - these are custom to the site and
+ * you shouldn't need to use them in your own implementations of jScrollPane.
+ */
+
+.yt_container_horz .yt_scroll_pane .item_scrollbar .item_scrollbar_title a:hover{
+    background: none !important;
+    text-decoration: none !important;
+}
+.yt_container_horz .yt_scroll_pane .item_scrollbar .item_scrollbar_readmore a:hover{
+    background: none !important;
+    text-decoration: none !important;
+    color:#6B7491 !important;
+}
+.yt_container_horz .yt_scroll_pane .item_scrollbar .item_scrollbar_readmore_theme2 a:hover{
+    background: none !important;
+    text-decoration: none !important;
+    color:#FFFFFF !important;
+}
+.yt_container_horz
+{
+    background: #FFFFFF;
+	border:1px solid #d3dfed;
+	padding:10px 10px 0 10px;
+}
+.yt_container_horz .item_scrollbar .item_scrollbar_title a{
+    background: none;
+    text-decoration: none;
+}
+.yt_container_horz .item_scrollbar div.item_scrollbar_readmore a{
+    background: none;
+    text-decoration: none;
+}
+.yt_container_horz .item_scrollbar div.opacity_content_scrollbar_theme2 div.item_scrollbar_title_theme2 a{
+    background: none;
+    text-decoration: none;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar{
+    float:left;
+    padding: 0 6px 0 5px;
+   /* margin-bottom: 20px; */
+	overflow: hidden; 
+	position: relative;   
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_img{
+    /*border: 3px #dcdbd7 solid;*/ 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title{
+    margin-top: 10px; 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title a{
+    font-weight: bold; 
+    color: #135cae;
+    font-size: 13px;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_desc{
+    margin-top: 5px; 
+    font-size: 100%; 
+    color: #555;
+	line-height:16px;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore{
+    font-size: 100%; 
+    text-decoration: none;
+	margin-top:5px;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore a{
+    color: #135cae;
+  
+}
+
+/*Theme2*/
+
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.opacity_scrollbar{ 
+	float: left; 
+	position: absolute; 
+	background: #000; 
+    margin-left: 3px; 
+	opacity: .8; 
+	margin-bottom: 10px;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.yt_container_horz .yt_scroll_pane .yt_opacity_scroll .opacity_scrollbar{
+    top: 165px;
+    left: 0;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_img_theme2{
+    border: 3px #dcdbd7 solid; 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title_theme2{
+    margin-top: 7px;
+    padding-left: 5px; 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title_theme2 a{
+    font-weight: bold; 
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_desc_theme2{
+    padding-left: 5px;
+    margin-top: 5px; 
+    font-size: 10px; 
+    color: #FFFFFF;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore_theme2{
+    font-size: 10px; 
+    text-decoration: underline;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore_theme2 a{
+    color: #FFFFFF;
+    float: right;
+    padding-right: 3px;
+}
+
+/*Theme3*/
+
+.yt_container_horz .yt_scroll_pane div.opacity_scrollbar_theme3{ 
+	float: left; 
+	position: absolute; 
+	background: #000; 
+    margin-left: 3px;
+	opacity: .8; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_img_theme3{
+    border: 3px #dcdbd7 solid; 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title_theme3{
+    margin-top: 7px;
+    padding-left: 5px; 
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_title_theme3 a{
+    font-weight: bold; 
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_desc_theme3{
+    padding-left: 5px;
+    margin-top: 5px; 
+    font-size: 10px; 
+    color: #FFFFFF;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore_theme3{
+    font-size: 10px; 
+    text-decoration: underline;
+}
+.yt_container_horz .yt_scroll_pane div.item_scrollbar div.item_scrollbar_readmore_theme3 a{
+    color: #FFFFFF;
+    float: right;
+    padding-right: 3px;
+}
+
+.stickytooltip_theme3{
+    display:none;
+    position:absolute;
+    display:none;
+    z-index:3000;
+    border: 0px red solid;
+}
+
+.stickytooltip_theme3 .tooltip_content{
+    color: #000000 !important; 
+    height: auto;
+    padding-bottom: 15px;
+    border: 0px silver solid; 
+}
+.stickytooltip_theme3 .tooltip_content .tooltip_title{
+    padding-bottom: 10px;
+    color: #135cae;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.stickytooltip_theme3 .tooltip_content .tooltip_desc{
+    color: #5b595a;
+    font-size: 10px;
+
+}
+.stickytooltip_theme3 .tooltip_content .tooltip_readmore a{
+    color: #135cae;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.stickytooltip_theme3 .tooltip_top_theme3{
+    width: 250px;
+    height: 10px;
+    background:url(../images/tooltip_top_bg.png) top no-repeat;
+}
+.stickytooltip_theme3 .tooltip_bottom_theme3{
+    background:url(../images/tooltip_bottom_bg.png) bottom center no-repeat;
+    width: 250px;
+    height: 26px;
+}
+
+.stickytooltip_theme3 .tooltip_center_theme3{
+    width: 300px;
+    background:url(../images/tooltip_center_bg.png) left repeat-y;
+}

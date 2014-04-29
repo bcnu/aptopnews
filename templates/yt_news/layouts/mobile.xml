@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout type="full">	
+	<head>		
+	</head>
+	<groups>
+	</groups>
+	<blocks>			
+		<header2 order="2" id="yt_header">
+			<positions>
+				<position width="" height="" type="feature">@logo</position>
+			</positions>
+		</header2>
+		<menu order="3" id="yt_menu" autosize="1">
+			<positions>
+				<position width="" type="feature">@menu</position>
+			</positions>
+		</menu>	
+		<content order="6" id="content" showDivTop="0" showDivBottom="0">
+			<positions>
+				<position width="" colspan="1" group="main" column='yt_col1' style="ytmod" type="modules">breadcrumb</position>	
+				<position width="" colspan="1" group="main" column='yt_col1' type="message"></position>			  		
+				<position column='yt_col1' width="" colspan="1" group="main" type="component">component</position>	
+			</positions>
+		</content>
+		<bottommenu order="7" id="yt_bottommenu">
+			<positions>
+				<position width="" style="ytmod" type="modules">footnav</position>				
+			</positions>
+		</bottommenu>
+		<navigationmenu order="8" id="yt_navigationmenu">
+			<positions>
+				<position width="" type="feature">@fontsize</position>
+				<position width="" type="feature">@switch_modes</position>
+				<position type="html">
+				<![CDATA[
+					<div class="top">
+						<a id="yt_totop" href="#top">Top</a>
+					</div>
+				]]>
+				</position>
+			</positions>
+		</navigationmenu>
+		<footer order="10" id="yt_footer">
+			<positions>
+				<position width="" type="feature">@copyright</position>
+				<position group="footnav" width="" style="" type="modules">social</position>				
+			</positions>
+		</footer>										
+	</blocks>
+</layout>		

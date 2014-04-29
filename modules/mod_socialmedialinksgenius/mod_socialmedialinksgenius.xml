@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Social Media Links Genius</name>
+	<author>Henry Hyde</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright (C) 2013 Genius Extenions. All rights reserved. Defualt icons provided by </copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>geniusextensions@yahoo.com</authorEmail>
+	<authorUrl>www.genuisextensions.com</authorUrl>
+	<version>1.001</version>
+	<description>MOD_SOCIALGENIUS</description>
+	<files>
+		<filename module="mod_socialmedialinksgenius">mod_socialmedialinksgenius.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+        <folder>icons/</folder>
+        <folder>assets/</folder>
+	<folder>elements/</folder>
+	<folder>fields/</folder>
+    </files>
+	<languages folder="site">
+		<language tag="en-GB">en-GB.mod_socialmedialinksgenius.ini</language>
+	</languages>
+
+<media destination="colorpicker/js" folder="">
+	<filename>color-picker.js</filename>
+</media> 
+
+	<config>
+
+		<fields name="params" addfieldpath="/modules/mod_socialmedialinksgenius/fields">
+
+			<fieldset name="basic">
+
+		<field type="spacer" name="spacer199"  label="MOD_PRESENCE_OURINFO" />
+
+		<field type="spacer" name="spacer1" label="MOD_PRESENCE_SETTINGS" />
+
+		<field type="spacer" name="spacer1tth" label="PLG_GENERALICON_SETTINGS" />
+
+	     <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+
+		<field name="size" type="text" default="32" label="Choose Icon Size" description="Choose the size of your icons (Typically between 24 and 64 pixels)." />
+
+		<field name="margin" type="text" default="2px" label="Space between icons" description="Enter the amount of space you would like between icons (Typically between 1 and 3)."/>			
+
+		<field name="text" type="text" default="Follow us on" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="rsstext" type="text" default="RSS Feed" label="Hover Text for RSS Icon" description="If you are using the RSS Icon, add the text to display when you mouseover the icon. ex: 'Subscribe to our Feed' (This module does not generate a feed, it only provides an RSS icon to link to your feed)"/>
+	
+		<field name="target" type="radio" default="_blank" label="Target Window" description="Choose to open the link in a new browser window or the same window">
+				<option value="_blank">New</option>
+				<option value="_self">Same</option>
+		</field>
+	
+		<field name="robots" type="radio" default="1" label="rel='nofollow'" description="Search Engines that support the rel='nofollow' attribute exclude these links from their ranking calculation ">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</field>
+			
+		<field name="align" type="radio" default="center" label="Align Icons" description="Choose to align the icons to the left to the right or in the center.">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+				<option value="right">Right</option>
+		</field>
+
+		<field name="alignment" type="radio" default="horizontal" label="Alignment" description="How would you like to display your buttons horizontal or vertical.">
+				<option value="horizontal">Horizontal</option>
+				<option value="vertical">Vertical</option>
+		</field>
+
+		<field name="credits" type="radio" default="yes" label="Support the Author?" description="This option allows you to show/hide a link back to our website.">
+				
+				<option value="yes">Yes</option>
+		</field>
+
+
+		<field type="spacer" name="spacerspecial" label="PLG_SPECIALEFFECT_SETTINGS" />
+
+		<field name="effect" type="list" default="none" label="Special Effect" description="Choose which type of special effect you would like to display or choose none.">
+				<option value="none">None</option>
+				<option value="dogear">Dog Ear</option>
+				<option value="enlarge">Enlarge</option>
+				<option value="shrink">Shrink</option>
+				<option value="shiftup">Shift Up</option>
+				<option value="shiftdown">Shift Down</option>
+				<option value="shiftright">Shift Right</option>
+				<option value="shiftleft">Shift Left</option>
+				<option value="highlight">Highlight</option>
+				<option value="rotate">Rotate</option>
+				<option value="bullseye">Bullseye</option>
+				<option value="custom">Custom</option>
+		</field>
+
+		<field name="opacity" type="list" default="100" label="Opacity Level" description="Choose the level of opacity to display your icons.">
+				<option value="100">100</option>
+				<option value="90">90</option>
+				<option value="80">80</option>
+				<option value="70">70</option>
+				<option value="60">60</option>
+				<option value="50">50</option>
+				<option value="40">40</option>
+				<option value="30">30</option>
+				<option value="20">20</option>
+				<option value="10">10</option>
+		</field>
+
+		<field name="modcolor" type="colorpicker" default="#ffffff" label="Background Color" description="The background color the area to display the buttons in HEX format (ex. #ffffff default white) Please include #."/>	
+
+		<field name="highlight" type="colorpicker" default="#fff000" label="Color to Highlight Border" description="Choose a bright color to highlight your icon border in HEX (ex. #fff000 default is yellow - for highlight effect) Please include #."/>		
+		
+		<field name="rotatedeg" type="list" default="90" label="Degrees to Rotate" description="Choose the number of degrees to rotate your icons.">	
+				<option value="-90">-90</option>
+				<option value="-180">-180</option>
+				<option value="-270">-270</option>
+				<option value="90">90</option>
+				<option value="180">180</option>
+				<option value="270">270</option>
+		</field>
+
+		<field type="spacer" name="spacer1sb" label="MOD_SIDEBAR_SETTINGS" />
+
+    <field name="sidebar" type="radio" default="no" label="Enable Icons on Side" description="Enable the Display of the Icons along the side of the screen.">
+       <option value="yes">Yes</option>
+       <option value="no">No</option>
+    </field>
+
+	<field name="padbottom" type="text" default="10" label="Margin Top or Bottom" description="Choose the Amount of space in pixels from the bottom or the top depending on where you align them." size="5" />
+
+	<field name="padrorl" type="text" default="2" label="Margin L/R or Center" description="Choose the Amount of space in pixels from the left or the right or away from the center of the screen." size="5" />
+
+    <field name="positioning" type="radio" default="fixed" label="Style Fixed" description="The icons are 'fixed' to a position on the screen when scrolling.">
+       <option value="fixed">Fixed</option>
+    </field>
+
+    <field name="startpos" type="radio" default="center" label="Starting Position of Icons" description="Choose where the starting position of the icons originates from, either the center of the screen or the side of the screen.">
+       <option value="center">Center of Screen</option>
+       <option value="side">Side of Screen</option>
+    </field>
+
+    <field name="orientation" type="radio" default="right" label="Orientation of Icons" description="Orientation of Icons. Right or Left side of screen.">
+       <option value="right">Right</option>
+       <option value="left">Left</option>
+    </field>
+
+    <field name="toporbot" type="radio" default="top" label="Placement of Icons" description="Placement of Icons. Either the Top of the Screen or the Bottom of the Screen.">
+       <option value="top">Top</option>
+       <option value="bottom">Bottom</option>
+    </field>
+
+		<field type="spacer" name="spacerbdrop" label="PLG_BACKDROP_SETTINGS" />
+
+    <field name="backdrop" type="radio" default="no" label="Display A Backdrop" description="Would you like to display a backdrop for your buttons.">
+       <option value="yes">Yes</option>
+       <option value="no">No</option>
+    </field>
+
+    <field name="backdropcol" type="colorpicker" default="#000000" label="Backdrop Color" description="The color of the backdrop in hex ex. #000000" />
+
+    <field name="bkdropheight" type="text" default="" label="Backdrop Height" description="The Height of the backdrop in pixels." />
+
+    <field name="bkdropwidth" type="text" default="" label="Backdrop Width" description="The Width of the backdrop in pixels." />
+
+	<field name="bkdropborder" type="list" default="none" label="Border Style" description="Choose your border style.">
+		<option value="none">None</option>
+		<option value="dotted">Dotted</option>
+		<option value="dashed">Dashed</option>
+		<option value="solid">Solid</option>
+		<option value="double">Double</option>
+		<option value="groove">Groove</option>
+		<option value="ridge">Ridge</option>
+		<option value="inset">Inset</option>
+		<option value="outset">Outset</option>
+	</field>
+
+	<field name="bkdropborwidth" type="list" default="2" label="Border Width" description="Choose your border width.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+	</field>
+
+	<field name="bkdropcss" type="text" default="" label="Backdrop Style CSS" description="The CSS Style of the backdrop." size="50" />
+
+	<field name="css2" type="text" default="" label="Button CSS style" description="CSS Style for Sidebar Area Buttons" />
+
+		<field type="spacer" name="spacerog" label="OPENGRAPHSETTINGS" />
+
+		<field type="spacer" name="spacerog1" label="OPENGRAPH" />
+
+        	<field name="ogtags" type="radio" default="no" label="Enable og Tags" description="Generate og Tags for your content.">
+          		<option value="yes">Yes</option>
+          		<option value="no">No</option>
+        	</field>
+
+        	<field name="ogtype" type="list" default="website" label="Select og Type" description="Choose an og Type. Embed Code {ogtype}yourtype{/ogtype}">
+          		<option value="activity">activity</option>
+          		<option value="sport">sport</option>
+          		<option value="bar">bar</option>
+          		<option value="company">company</option>
+          		<option value="cafe">cafe</option>
+          		<option value="hotel">hotel</option>
+          		<option value="restaurant">restaurant</option>
+          		<option value="cause">cause</option>
+          		<option value="sports_league">sports_league</option>
+          		<option value="sports_team">sports_team</option>
+          		<option value="band">band</option>
+          		<option value="government">government</option>
+          		<option value="non_profit">non_profit</option>
+          		<option value="school">school</option>
+          		<option value="university">university</option>
+          		<option value="actor">actor</option>
+          		<option value="athlete">athlete</option>
+          		<option value="author">author</option>
+          		<option value="director">director</option>
+          		<option value="musician">musician</option>
+          		<option value="politician">politician</option>
+          		<option value="public_figure">public_figure</option>
+          		<option value="city">city</option>
+          		<option value="country">country</option>
+          		<option value="landmark">landmark</option>
+          		<option value="state_province">state_province</option>
+          		<option value="album">album</option>
+          		<option value="book">book</option>
+          		<option value="drink">drink</option>
+          		<option value="food">food</option>
+          		<option value="game">game</option>
+          		<option value="product">product</option>
+          		<option value="song">song</option>
+          		<option value="movie">movie</option>
+          		<option value="tv_show">tv_show</option>
+          		<option value="blog">blog</option>
+          		<option value="website">website</option>
+          		<option value="article">article</option>
+        	</field>
+
+		<field name="ogtitle" type="text" label="Select og Title" description="This title will be used on all pages or leave blank to auto populate page title. Embed Code {ogtitle}yourtitle{/ogtitle}" default="" size="50"/>
+
+		<field name="ogdescription" type="text" label="Select og Desc" description="This description will be used on all pages or leave blank to auto populate description. Embed Code {ogdesc}yourdesc{/ogdesc}" default="" size="50"/>
+
+		<field name="ogurl" type="text" label="Select og URL" description="This URL will be used on all pages or leave blank to auto populate URL. Embed Code {ogurl}http://www.yoururl.com{/ogurl}" default="" size="50"/>
+
+		<field name="ogimage" type="text" label="Select og Image" description="This image URL will be used on all pages or leave blank to auto populate. Embed Code {ogimage}http://www.image.com/img.jpg{/ogimage}." default="" size="50"/>
+
+		<field type="spacer" name="spacerogsup" label="OGSUPPORTED" />
+
+		<field name="ogdeterminer" type="text" label="Select og Determiner" description="The word before the object's title. ie. 'the, an, a' This determiner will be used on all pages or use Embed Code {ogdeterminer}the/a/an/etc..{/ogdeterminer}." default="" size="50"/>
+
+		<field name="ogaudio" type="text" label="Select og Audio" description="This audio URL will be used on all pages or use Embed Code {ogaudio}http://www.audio.com/audio.wav{/ogaudio}." default="" size="50"/>
+
+		<field name="oglocale" type="text" label="Select og Locale" description="This locale will be used on all pages or use Embed Code {oglocale}en_US{/oglocale}." default="" size="50"/>
+
+		<field name="ogsitename" type="text" label="Select og Site Name" description="This Site Name will be used on all pages or use Embed code {ogsitename}yoursitename{/ogsitename}." default="" size="50"/>
+
+		<field name="ogvideo" type="text" label="Select og Video" description="This video URL will be used on all pages or use Embed Code {ogvideo}http://www.yourvideo.com/video.avi{/ogvideo}." default="" size="50"/>
+
+		<field type="spacer" name="spacerogmoreimg" label="OGMOREIMAGE" />
+
+		<field name="ogimagesecure" type="text" label="Select og Image Secure" description="If using https: // This will be used on all pages or use Embed Code {ogimagesecure}https://yourimage.com/ogp.jpg{/ogimagesecure}." default="" size="50"/>
+
+		<field name="ogimagetype" type="list" label="Select og Image Type" description="Image MIME type. This will be used on all pages or use Embed Code {ogimagetype}image/jpeg{/ogimagetype}." default="none" >
+		<option value="none">-</option>
+		<option value="image/gif">GIF</option>
+		<option value="image/jpeg">JPEG</option>
+		<option value="image/png">PNG</option>
+		<option value="image/svg+xml">SVG</option>
+		<option value="image/tiff">TIFF</option>
+		<option value="image/vnd.microsoft.icon">ICO</option>
+	</field>
+
+
+		<field name="ogimagewidth" type="text" label="Select og Image Width" description="Image width in pixels. This will be used on all pages or use Embed Code {ogimagewidth}640{/ogimagewidth}." default="" size="50"/>
+
+		<field name="ogimageheight" type="text" label="Select og Image Height" description="Image height in pixels. This will be used on all pages or use Embed Code {ogimageheight}480{/ogimageheight}." default="" size="50"/>
+
+		<field type="spacer" name="spacerogmorevid" label="OGMOREVIDEO" />
+
+		<field name="ogvideosecure" type="text" label="Select og Video Secure" description="If using https: // This will be used on all pages or use Embed Code {ogvideosecure}https://yourvideo.com/ogp.avi{/ogvideosecure}." default="" size="50"/>
+
+		<field name="ogvideotype" type="list" label="Select og Video Type" description="Video MIME type. This will be used on all pages or use Embed Code {ogvideotype}video/mpeg{/ogvideotype}." default="none">
+		<option value="none">-</option>
+		<option value="video/mpeg">MPEG</option>
+		<option value="video/mp4">MP4</option>
+		<option value="video/ogg">Ogg Theora</option>
+		<option value="video/quicktime">QuickTime</option>
+		<option value="video/webm">WebM</option>
+		<option value="video/x-matroska">Matroska</option>
+		<option value="video/x-me-wmv">WMV</option>
+		<option value="video/x-flv">FLV</option>
+	</field>
+
+		<field name="ogvideowidth" type="text" label="Select og Video Width" description="Video width in pixels. This will be used on all pages or use Embed Code {ogvideowidth}640{/ogvideowidth}." default="" size="50"/>
+
+		<field name="ogvideoheight" type="text" label="Select og Video Height" description="Video height in pixels. This will be used on all pages or use Embed Code {ogvideoheight}480{/ogvideoheight}." default="" size="50"/>
+
+		<field type="spacer" name="spacerogmoreaudio" label="OGMOREAUDIO" />
+
+		<field name="ogaudiosecure" type="text" label="Select og Audio Secure" description="If using https: // This will be used on all pages or use Embed Code {ogaudiosecure}https://youraudio.com/ogp.wav{/ogaudiosecure}." default="" size="50"/>
+
+		<field name="ogaudiotype" type="list" label="Select og Audio Type" description="Audio MIME type. This will be used on all pages or use Embed Code {ogaudiotype}audio/vnd.wav{/ogaudiotype}." default="none">
+		<option value="none">-</option>
+		<option value="audio/basic">mulaw</option>
+		<option value="audio/L24: 24bit">Linear PCM</option>
+		<option value="audio/mp4">MP4</option>
+		<option value="audio/mpeg">MP3</option>
+		<option value="audio/ogg">Ogg Vorbis</option>
+		<option value="audio/vorbis">Vorbis</option>
+		<option value="audio/x-ms-wma">WMA</option>
+		<option value="audio/vnd-rn-realaudio">RealAudio</option>
+		<option value="audio/vnd.wave">WAV</option>
+		<option value="audio/webm">WebM</option>
+	</field>
+
+
+		<field type="spacer" name="spacer2" label="PLG_SOCIALPROFILE_SETTINGS" />
+
+		<field type="spacer" name="spacer2gop" label="MOD_GOOGLEPLUSONE_SETTINGS" />
+
+		<field name="ic1" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url1" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht1" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ic2" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url2" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht2" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic3" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url3" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht3" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic4" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url4" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ht4" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic5" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url5" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ht5" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic6" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url6" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht6" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic7" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url7" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht7" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic8" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url8" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ht8" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic9" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url9" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht9" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic10" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url10" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ht10" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic11" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url11" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<field name="ht11" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic12" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url12" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht12" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic13" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url13" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht13" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic14" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url14" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+
+		<field name="ht14" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic15" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url15" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht15" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic16" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url16" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht16" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic17" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url17" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht17" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic18" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url18" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht18" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic19" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url19" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht19" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic20" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url20" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht20" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		
+		<field name="ic21" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url21" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+
+		<field name="ht21" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic22" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url22" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht22" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic23" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url23" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht1" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic24" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url24" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht24" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic25" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url25" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht25" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic26" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url26" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht26" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic27" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url27" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht27" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic28" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url28" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht28" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic29" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url29" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		
+
+		<field name="ht29" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic30" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url30" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht30" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+		
+		<field name="ic31" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url31" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht31" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic32" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url32" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht32" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic33" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url33" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht33" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic34" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url34" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht34" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic35" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url35" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht35" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic36" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url36" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht36" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic37" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url37" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht37" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic38" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url38" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht38" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic39" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url39" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht39" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic40" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url40" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht40" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic41" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url41" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht41" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic42" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url42" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht42" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic43" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url43" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht43" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic44" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url44" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+
+		<field name="ht44" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic45" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url45" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht45" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic46" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url46" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht46" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic47" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url47" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht47" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic48" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url48" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht48" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic49" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url49" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht49" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic50" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url50" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht50" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic51" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url51" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht51" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic52" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url52" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht52" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic53" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url53" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht53" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic54" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url54" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht54" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic55" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url55" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht55" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic56" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url56" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht56" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic57" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url57" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht57" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic58" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url58" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht58" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic59" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url59" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht59" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic60" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url60" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht60" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic61" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url61" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht61" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic62" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url62" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht62" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic63" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url63" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht63" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic64" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url64" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+
+		<field name="ht64" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic65" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url65" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht65" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic66" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url66" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht66" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic67" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url67" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht67" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic68" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url68" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht68" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic69" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url69" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht69" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic70" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url70" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+
+		<field name="ht70" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic71" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url71" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht71" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic72" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url72" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht72" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic73" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url73" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht73" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic74" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url74" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht74" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic75" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url75" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht75" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic76" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url76" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht76" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic77" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url77" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht77" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic78" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url78" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht78" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic79" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url79" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht79" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic80" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url80" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht80" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic81" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url81" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht81" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic82" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url82" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht82" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic83" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url83" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht83" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic84" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url84" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht84" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic85" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url85" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht85" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic86" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url86" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht86" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic87" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url87" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht87" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic88" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url88" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht88" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic89" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url89" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht89" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic90" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url90" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht90" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic91" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url91" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht91" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic92" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url92" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht92" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic93" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url93" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht93" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic94" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url94" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht94" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic95" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url95" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht95" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic96" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url96" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht96" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic97" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url97" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht97" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic98" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url98" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht98" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic99" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url99" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht99" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic100" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url100" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht100" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic101" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url101" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht101" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic102" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url102" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht102" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic103" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url103" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht103" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic104" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url104" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht104" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic105" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url105" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht105" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic106" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url106" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht106" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic107" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url107" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht107" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic108" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url108" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht108" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic109" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url109" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht109" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic110" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url110" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht110" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic111" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url111" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht111" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic112" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url112" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht112" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic113" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url113" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht113" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic114" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url114" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht114" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+v
+		<field name="ic115" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url115" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht115" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic116" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url116" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht116" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic117" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url117" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht117" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic118" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url118" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht118" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+		<field name="ic119" type="imagelist" default="" label="Choose Icon" description="Select the icon image that you want to display" directory="/modules/mod_socialmedialinksgenius/icons" striptext="" />
+		<field name="url119" type="text" default="" size="75" label="URL" description="Type the full URL including http://"/>
+
+		<field name="ht119" type="text" default="" size="75" label="Hover Text" description="Text to display when you mouseover the icon. ex: 'Follow us on' (The icon name will be apended to the end of this text to display ex: 'Follow us on Twitter'"/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

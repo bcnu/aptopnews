@@ -1,0 +1,140 @@
+/* CSS Document */
+
+body.blue a {
+    color: ##FFFFFF;
+}
+.blue #yt_top .yt-main {
+	background:url(../../images/blue/bg-top.gif) repeat-x left bottom;
+}
+.blue #yt_top .yt-main .yt-main-in1 {
+    border-left: 1px solid #61A2C0;
+}
+.blue #yt_top .yt-main .yt-main-in1 .yt-main-in2 {
+    border-right: 1px solid #61A2C0;
+}
+.blue #yt_login-top, 
+.blue #yt_register{
+    border: 1px solid #7DB0BF;
+	border-top:none;
+}
+.blue #yt_header h1.logo a{
+	background:url(../../images/blue/logo.png) no-repeat left top;
+}
+.blue #yt_menu .yt-main-in1 {
+    background: #61A2C0;
+}
+.blue .yt-menus ul li h2 a {
+    color: #FFFFFF;
+    text-shadow: 2px 1px #5C5C5C;
+}
+.blue .yt-menus ul li.active a,
+.blue .yt-menus ul li.active li.active a,
+.blue .yt-menus ul li.active li.active li.active a {
+	color:#000000;
+	text-shadow:none;
+}
+.blue .yt-menus ul li.active ul li a,
+.blue .yt-menus ul li.active li.active li a {
+	text-shadow: 1px 1px #5C5C5C;
+}
+.blue .yt-menus ul li.active li a,
+.blue .yt-menus ul li.active li.active li a{
+	text-transform:none;
+	color: #FFFFFF;
+}
+.blue .yt-menus ul li ul li.first{border:none}
+.blue #yt_menu .yt-main{
+	background:url(../../images/blue/bg-menu-head.gif) no-repeat top left;
+}
+.blue.rtl #yt_menu .yt-main{
+	background:url(../../images/blue/bg-menu-head_rtl.gif) no-repeat top right;
+}
+.blue #yt_botslwrap2 .yt-main {
+    border-top: 4px solid #61A2C0;
+}
+.rtl.blue  #content .nomal_content_normal a {
+    background: url("../../images/blue/bg-a-bottom-content_rtl.gif") no-repeat scroll right center;
+}
+.ltr.blue #content .nomal_content_normal a {
+    background: url("../../images/blue/bg-a-bottom-content.gif") no-repeat scroll left center;
+}
+.blue #yt_footer #footnav li a {
+	color:#386073;
+}
+.blue .yt-menus ul li ul{
+	 background:url(../../images/blue/bg-child-menu.gif) repeat left top;
+}
+.blue .yt-menus ul li ul li ul {
+    border: 0 none;
+    position: relative;
+}
+
+/*.blue .yt-menus ul li ul {
+  background:#478400;
+  border:none;
+}
+.blue .yt-menus ul li ul li {
+    background: none;
+	border-top:1px solid #CCC;
+}
+.blue .yt-menus ul li ul li h3 a {
+	color:#CCC;
+}
+.blue .yt-menus ul li ul li ul li a {
+	color:#CCC;
+}*/
+.blue .moduletable h3 {
+    background:#61A2C0;
+    color: #FFFFFF;
+    text-shadow: 2px 1px #5C5C5C;
+}
+.blue .yt_frontpage .main_content span {
+    background: none;
+	text-shadow:none;
+}
+.blue #yt_footer .yt-main {
+    border-top: 2px solid #61A2C0;
+}
+
+.blue .mootabs_title {
+    background: #61A2C0;
+}
+/*.blue .widget-wrap h2 a, .blue .widget-wrap h2 {
+	color:#478400;
+}
+.blue .yt_news_content .normal_news_content div.nomal_items div.nomal_content_normal strong{
+	color:#066612;
+}
+.blue .yt_news_content .normal_news_content div.nomal_items div.nomal_content_normal span {
+    color: #478400;
+}
+.blue .yt_frontpage .nomal_frontpage div.nomal_items div.nomal_content strong {
+	color:#478400 !important;
+}
+.blue .yt_frontpage .main_frontpage div.main_content h3 {
+    color: #478400 !important;
+}
+.blue .main_content_main h4{
+	color:#066612;
+}
+
+.blue .moduletable ul.menu li.active ul li a span, .moduletable ul.menu li.active ul li.active ul li a span {
+    color:#478400;
+}
+.blue .moduletable ul.menu li a{
+	color:#478400;
+}*/
+.blue .mootabs_title li.active {
+    background: url(../../images/blue/tab-active-l.gif) no-repeat left top;
+}
+.blue .mootabs_title li.active span {
+    background: url(../../images/blue/tab-active-r.gif) no-repeat right top;
+
+}
+.blue .mootabs_title li {
+    background: url(../../images/blue/tab-l.gif) no-repeat left top;
+
+}
+.blue .mootabs_title li span {
+	background:url(../../images/blue/tab-r.gif) no-repeat right top;
+}

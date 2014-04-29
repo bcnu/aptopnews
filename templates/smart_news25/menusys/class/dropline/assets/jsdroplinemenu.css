@@ -1,0 +1,364 @@
+@IMPORT url(../../common/css/menustyle.css);
+
+@IMPORT url(../../common/css/jshover.css);
+
+/*****************************
+ * JS DROPLINE MENU
+ *****************************/
+/* style for drop */
+ul#droplinenav.navi{
+	/*height: 72px; */
+}
+
+ul#droplinenav.navi ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;
+}
+
+ul#droplinenav.navi li.level2{
+	float: left;
+}
+
+ul#droplinenav.navi div.separator.level2.havechild,
+ul#droplinenav.navi a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 95% -106px;
+	background-repeat: no-repeat;
+}
+
+ul#droplinenav.navi li.level1.active ul.level2{
+	left: 0px;	
+}
+ul#droplinenav.navi li.hover{
+	position: static;
+}
+
+ul#droplinenav.navirtl ul.level2{
+	margin: 0;
+	width: 1023px;
+	height: 33px;	
+}
+
+ul#droplinenav.navirtl li.level2{
+	float: right;
+}
+
+ul#droplinenav.navirtl div.separator.level2.havechild,
+ul#droplinenav.navirtl a.level2.havechild
+{	
+	padding: 0 20px 0 20px;
+	background-image: url(../../common/images/arrow.png);
+	background-position: 5% -106px;
+	background-repeat: no-repeat;
+}
+
+ul#droplinenav.navirtl li.level1.active ul.level2{
+	right: 0px;
+}
+ul#droplinenav.navirtl li.hover{
+	position: static;
+}
+ul#droplinenav.navirtl ul.level2 li.hover{
+	/*position: relative;*/
+}
+
+
+ul.navi div.fxcontent {
+	position: absolute;
+	display: block;
+	left: 0;
+	background:#d9d9d9;
+}
+/*ul.navi div.fxcontent{
+	margin-left:-1px;
+}
+ul.navi ul.level2 div.fxcontent{
+	margin-left:0px;
+}*/
+ul.navi ul.level2 div.fxcontent {
+	border:none;
+	background:url(../../../../images/menuwrap-sub-bg.png) repeat top left;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow:0 0 2px #000;
+	-webkit-box-shadow:0 0 2px #000;
+	-moz-box-shadow:0 0 2px #000;
+}
+ul.navi ul.level2 div.fxcontent.slide.drop > ul.subnavi.insidefx{
+	background:none;
+}
+ul.navi li.level3.first{
+	margin-top:0px;
+}
+ul.navi li.level3.last{
+	margin-bottom:5px;
+}
+
+ul.navi div.fxcontent>ul.subnavi.insidefx {
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+/* LTR SLIDE */
+ul.navi div.fxcontent.slide.drop>ul.subnavi.insidefx {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding:0 0;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;	
+	background:url(../../../../images/menudropline-bg.gif) repeat-x bottom left;
+	
+} 
+ul.navi ul.level2{
+	padding:0 2px 0 1px;
+}
+ul.navi div.fxcontent.slide.drop{
+	
+}
+ul#droplinenavigator.navi li.level2{
+	margin:0 0;
+	background:none;
+}
+ul.navi div.separator.level2 span.menu-title, 
+ul.navi a.level2 span.menu-title{
+	padding:9px 0;
+	font-size:10px;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+ul.navi div.separator.level2.showdesc span.menu-title, 
+ul.navi a.level2.showdesc span.menu-title{
+	padding:2px 0 1px;
+}
+ul.navi div.separator.level2 span.menu-desc, 
+ul.navi a.level2 span.menu-desc{
+	padding:0 0 0;
+}
+
+ul.navi div.fxcontent.slide.toleft>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+ul.navi div.separator.level2, 
+ul.navi a.level2{
+	padding:0 15px;
+	background:none;
+}
+ul.navi div.fxcontent.slide.toright>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+/* LTR SCROLL */
+ul.navi div.fxcontent.scroll.drop>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toleft>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent.scroll.toright>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-bar { /* as ul background */
+	background: #666;
+	display: block;
+	position: absolute;
+}
+
+ul.navi div.fxcontent.slide.drop>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.slide.toleft>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent.slide.toright>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.drop>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toleft>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.toright>div.fxcontent-bar {
+	bottom: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}
+
+/** for RTL **/
+ul.navirtl div.fxcontent {
+	position: absolute;
+	display: block;
+	right: 0;
+	background:#d9d9d9;
+}
+
+ul.navirtl ul.level2 div.fxcontent {
+	border:none;
+	background:url(../../../../images/menuwrap-sub-bg.png) repeat top right;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow:0 0 2px #000;
+	-webkit-box-shadow:0 0 2px #000;
+	-moz-box-shadow:0 0 2px #000;
+}
+ul.navirtl div.fxcontent>ul.subnavi.insidefx {
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+ul.navirtl div.fxcontent.slide.drop>ul.subnavi.insidefx {
+	bottom: 0;
+	right: 0;
+	padding:0 0;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;	
+	background:url(../../../../images/menudropline-bg.gif) repeat-x bottom right;
+}
+ul.navirtl ul.level2 div.fxcontent.slide.drop>ul.subnavi.insidefx {
+	top: 0;
+	bottom:auto;
+	right:auto;
+	left: 0;
+	background:none;
+}
+
+ul.navirtl ul.level2{
+	padding:0 2px 0 1px;
+}
+ul.navirtl div.fxcontent.slide.drop{
+	
+}
+ul#droplinenavigator.navirtl li.level2{
+	margin:0 0;
+	background:none;
+}
+ul.navirtl div.separator.level2 span.menu-title, 
+ul.navirtl a.level2 span.menu-title{
+	padding:9px 0;
+	font-size:10px;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+ul.navirtl div.separator.level2.showdesc span.menu-title, 
+ul.navirtl a.level2.showdesc span.menu-title{
+	padding:2px 0 1px;
+}
+ul.navirtl div.separator.level2 span.menu-desc, 
+ul.navirtl a.level2 span.menu-desc{
+	padding:0 0 0;
+}
+
+ul.navirtl div.fxcontent.slide.toleft>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+ul.navirtl div.separator.level2, 
+ul.navirtl a.level2{
+	padding:0 15px;
+	background:none;
+}
+ul.navirtl div.fxcontent.slide.toright>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toleft>ul.subnavi.insidefx {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toright>ul.subnavi.insidefx {
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-bar { /* as ul background */
+	background: #666;
+	display: block;
+	position: absolute;
+}
+
+ul.navirtl div.fxcontent.slide.drop>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toleft>div.fxcontent-bar {
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.slide.toright>div.fxcontent-bar {
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toleft>div.fxcontent-bar {
+	bottom: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.toright>div.fxcontent-bar {
+	bottom: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}

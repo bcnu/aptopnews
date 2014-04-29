@@ -1,0 +1,318 @@
+body.fs1 {font-size: 14px !important;}
+body.fs2 {font-size: 16px !important;}
+body.fs3 {font-size: 18px !important;}
+body.fs4 {font-size: 20px !important;}
+body.fs5 {font-size: 22px !important;}
+body.fs6 {font-size: 24px !important;}
+
+#btn_search{
+}
+#btn_login,
+#btn_regis{
+	float:left;
+	margin:0 0 0 10px;
+	width:36px;
+	height:28px;
+	display:block;
+	text-indent:-999em;
+}
+#btn_login{
+	background:url(../images/m_login.gif) no-repeat top left;
+}
+#btn_regis{
+	background:url(../images/m_regis.gif) no-repeat top left;
+}
+h1.logo a{
+	width:257px;
+	height:54px;
+	display:block;
+}
+.yt-day {
+    top: 58px;
+}
+h1.logo a span{
+	display: none;
+}
+.mod_wrap_inner{
+	background:#FFF;
+	padding:10px;
+	border:4px solid #006699;
+	font-size:16px;
+}
+.close-popup, #m_login #btn_login_closepop {
+    background: url("../images/icon-close.png") no-repeat scroll left bottom;
+    display: inline-block;
+    float: right;
+    padding: 5px;
+    position: absolute;
+    right: -25px;
+    text-indent: -999em;
+    top: -25px;
+    width: 31px;
+}
+#m_search{
+	top:100px;
+	width:300px;
+	margin:auto;
+	display:none;
+}
+#m_search h3{
+	margin:0 0 10px 0;
+}
+#m_search h3 span{
+	margin:0;
+}
+#m_search input.button{
+	margin:0 5px;
+}
+#m_login,
+#m_regis{
+	top:100px;
+	width:300px;
+	margin:auto;
+	display:none;
+}
+#m_login{
+	top:100px;
+	width:350px;
+	margin:auto;
+	display:none;
+}
+#btn_search{
+	color:#FFF;
+	text-indent:-999em;
+	background: #F2F2F2 url(../images/search-btn.png) no-repeat center center;
+	height:20px;
+	width:25px;
+	display:block;
+}
+#yt_menuwrap .yt-main{
+	position:static !important;
+}
+#yt_mobile_header .yt-main{
+}
+.head1{
+	height:80px;
+}
+.head2{
+	height:40px;
+}
+.inline_logo{
+	position:absolute;
+	top:20px;
+	right:4%;
+	z-index:1001;
+}
+.inline_menu{
+	position:absolute;
+	top:110px;
+	right:4%;
+}
+#yt_mobile_content{
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.yt-fontsize{
+	margin:0 0;
+}
+.yt-fontsize span{
+	float:left;
+}
+ul.fontsize-panel{
+	margin:0 0;
+}
+ul.fontsize-panel li{
+	background:none;
+	display:inline;
+}
+#yt-mobilemenu{
+	margin:9px 0 0 7px;
+	font-size:16px;
+}
+#yt_navigationmenu{
+	float:left;
+	width:100%;
+	margin:0;
+}
+#yt_navigationmenu .yt-main {
+    overflow: hidden;
+    padding: 0;
+}
+#yt_navigationmenu .yt-main-in1{
+    background:#4CA9E1;
+    margin:0 5px;
+	overflow:hidden;
+	padding:10px 0;
+}
+.top a{
+	float:right;
+	text-decoration:none;
+}
+.yt-switch_modes{
+	margin:0 0;
+}
+.yt-switch_modes span.title-swm{
+}
+.yt-switch_modes ul.nav-swm{
+	background:transparent;
+	padding:5px;
+}
+.yt-fontsize li{
+	background-image:url(../images/m_fontsize.png);
+	background-repeat:no-repeat;
+	float:left;
+	height:26px;
+	padding:0 0;
+	margin:0 10px 0 0;
+	font-size:16px;
+}
+.yt-fontsize li.label{
+	background:none;
+	font-weight:bold;
+}
+.yt-fontsize li.dec{
+	/*background-position:0px 50%;*/
+	text-indent:-999em;
+}
+.yt-fontsize li.reset{
+	text-indent:-999em;
+}
+.yt-fontsize li.inc{
+	text-indent:-999em;
+}
+.yt-switch_modes {
+	margin:0 0 0;
+	font-size:92%;
+	color:#000;
+}
+.yt-switch_modes span.title-swm {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+}
+.switchmodes-wrap{
+	/*width:210px;*/
+	margin:0 auto;
+	font-size:16px;
+}
+#yt_bottommenu{
+	width:100%;
+	float:left;
+	margin-top:30px;
+}
+#yt_bottommenu .yt-main {
+    border-bottom: 1px solid;
+    border-top: 4px solid #4CA9E1;
+    padding: 20px 0 0;
+}
+#yt_bottommenu ul.menu li{
+	background-position:left center;	
+}
+#yt_footer{
+	min-height:70px;
+	height:auto;
+	font-size:16px;
+}
+#yt_footer .yt-copyright .footer1, 
+#yt_footer .yt-copyright .footer2{
+	padding:0 20px;
+}
+dl.article-info{
+	line-height:130%;
+}
+#yt_footer .yt-main{
+	margin-top:15px;
+	padding-bottom:10px;
+}
+#m_regis div.inner,
+#m_login div.inner{
+	margin-top:20px;
+}
+#m_regis div.inner span.note,
+#m_regis div.inner label span,
+#m_login div.inner label span{
+	/*width:20%;*/
+	display:block;
+}
+#m_regis div.inner label span, #m_login div.inner label span{
+    width: 38%;
+}
+#yt-user-reg label.yt-field-regis .inputbox,
+#yt-user-reg #pwmsg .inputbox, #yt-user-reg #usernamemsg .inputbox{
+	width:80px;
+}
+#m_regis div.inner label span, #m_login div.inner label span {
+    display: inline-block;
+}
+#m_regis div.inner span.note{
+	display:block;
+}
+#m_regis div.inner label span.star{
+	display:inline;
+	width:auto;
+}
+ul.yt-login-links{
+	margin-top:10px;
+}
+#login-form  #form-login-remember{
+	margin:15px 0;
+}
+ul.yt-login-links li{
+	background-position:left center;
+}
+p#form-login-remember label {
+    display: inline;
+    line-height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+p#form-login-remember input {
+    display: inline;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.inner label{
+	display:block;
+	margin-bottom:5px;
+}
+#yt_mobile_content .moduletable{
+	background:none;
+	border:none;
+}
+.rtl .inline_logo,
+.rtl .inline_menu {
+    left: 4%;
+    right:auto;
+}
+.rtl .close-popup, .rtl #m_login #btn_login_closepop {
+    left: -15px;
+    top: -20px;
+	right:auto;
+}
+.rtl #m_regis div.inner span.note{
+	text-align:right;
+}
+.rtl #member-registration .button{
+	float:right;
+}
+.rtl #m_regis h3,
+.rtl #m_login h3{
+	text-align:right;
+}
+.rtl #m_regis div.inner, .rtl #m_login div.inner{
+	text-align:right;
+}
+.rtl #m_regis div.inner label span,
+.rtl #m_login div.inner label span{
+	float:right;
+}
+.rtl p#form-login-remember input {
+    float: right;
+    margin: 0 0 0 10px;
+}

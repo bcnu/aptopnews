@@ -1,0 +1,182 @@
+@IMPORT url(../../common/css/menustyle.css);
+@IMPORT url(../../common/css/jshover.css);
+@IMPORT url(../../common/css/megamenu-components.css);
+
+/*****************************
+ * MEGA MENU 
+ *****************************/
+ 
+ul.navi div.fxcontent{
+	position: absolute;	
+	display: block;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow:0 0 2px #000;
+	-webkit-box-shadow:0 0 2px #000;
+	-moz-box-shadow:0 0 2px #000;
+	z-index:1 !important;
+}
+
+ul.navi div.fxcontent>div.mega-content.insidefx{
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+/* LTR SLIDE */
+ul.navi div.fxcontent.slide.drop>div.mega-content.insidefx{
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+ul.navi div.fxcontent.slide.toleft>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.navi div.fxcontent.slide.toright>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+/* LTR SCROLL */
+ul.navi div.fxcontent.scroll.drop>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.navi div.fxcontent.scroll.toleft>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.navi div.fxcontent.scroll.toright>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-bar{
+	/* as div.mega-content background */
+	background-color: #909090;
+	display: block;
+	position: absolute;	
+}
+ul.navi div.fxcontent.slide.drop>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+ul.navi div.fxcontent.slide.toleft>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.navi div.fxcontent.slide.toright>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+
+ul.navi div.fxcontent.scroll.drop>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.navi div.fxcontent.scroll.toleft>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.navi div.fxcontent.scroll.toright>div.fxcontent-bar{
+	bottom: 0;
+	right: 0;
+}
+
+ul.navi div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}
+
+/** for RTL **/
+ul.navirtl div.fxcontent{
+	position: absolute;	
+	display: block;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow:0 0 2px #000;
+	z-index:1 !important;
+}
+ul.navirtl div.fxcontent{
+}
+ul.navirtl div.fxcontent>div.mega-content.insidefx{
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+}
+
+ul.navirtl div.fxcontent.slide.drop>div.mega-content.insidefx{
+	bottom: 0;
+	right: 0;
+}
+ul.navirtl div.fxcontent.slide.toleft>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+ul.navirtl div.fxcontent.slide.toright>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.navirtl div.fxcontent.scroll.toleft>div.mega-content.insidefx{
+	top: 0;
+	right: 0;
+}
+ul.navirtl div.fxcontent.scroll.toright>div.mega-content.insidefx{
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-bar{
+	/* as div.mega-content background */
+	background-color: #909090;
+	display: block;
+	position: absolute;	
+}
+ul.navirtl div.fxcontent.slide.drop>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.navirtl div.fxcontent.slide.toleft>div.fxcontent-bar{
+	top: 0;
+	right: 0;
+}
+ul.navirtl div.fxcontent.slide.toright>div.fxcontent-bar{
+	top: 0;
+	left: 0;
+}
+
+ul.navirtl div.fxcontent.scroll.drop>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.navirtl div.fxcontent.scroll.toleft>div.fxcontent-bar{
+	bottom: 0;
+	left: 0;
+}
+ul.navirtl div.fxcontent.scroll.toright>div.fxcontent-bar{
+	bottom: 0;
+	right: 0;
+}
+
+ul.navirtl div.fxcontent>div.fxcontent-pinner {
+	background: #f00;
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+}

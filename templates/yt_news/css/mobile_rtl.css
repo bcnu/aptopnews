@@ -1,0 +1,42 @@
+.inline_menu,
+.inline_logo {
+	right:auto;
+    left: 4%;
+}
+.close-popup {
+	float: left;
+}
+p#form-login-remember input {
+    float: right;
+	margin: 0 0 0 10px;
+}
+.top a {
+    float: left;
+}
+.yt-switch_modes {
+    margin:  0 0;
+}
+.yt-fontsize li {
+    float: right;
+    margin: 0 0 0 10px;
+}
+#yt_bottommenu ul.menu li {
+    background-position: right center;
+}
+#yt_mobilemenu {
+    margin: 9px 7px 0 0;
+}
+#image-content img.caption,
+#image-content img {
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+.img_caption.left {
+	float: right !important;
+}
+.yt-fontsize {
+	float: right;
+}
+#yt_footer .group-footnav.clearfix {
+    float: left !important;
+}

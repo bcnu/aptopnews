@@ -1,0 +1,15 @@
+/* CSS Document */
+.mootabs_title li span{
+	padding: 6px 10px 2px 0;
+}
+#yt_menu #yt_search .search input{
+	padding:3px 0 2px 5px;
+}
+#mod_search_searchword{
+    padding-top: 3px !important ;
+	padding-bottom: 2px !important;
+}
+#syndicate .yt-position-inner {
+    margin: 33px 0 0 !important;
+}
+#yt_login-top .button, #yt_login-top .button:hover{ position:absolute; top:7px;}

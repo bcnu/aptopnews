@@ -1,0 +1,195 @@
+/*------------------------------------------------------------------------
+# Yt Vm Simple Tabs - Version 1.0
+# Copyright (C) 2011 SmartAddons.Com. All Rights Reserved.
+# @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Author: YouTech Company
+# Websites: http://www.smartaddons.com/
+ -------------------------------------------------------------------------*/
+/*them1*/
+.yt_vm_simpletabs ul  li { list-style-type:none;}
+.yt_vm_simpletabs  .tabs li {
+	cursor: pointer;
+}
+.yt_vm_simpletabs {
+    border:1px solid #D7E2EF;
+}
+.yt_vm_simpletabs h3 {
+    padding-left: 0px!important;
+}
+
+.yt_vm_simpletabs .arrow {background-image : url('../images/arrow.png'); height: 8px; width: 6px; margin-right: 6px; margin-top: 6px; float: left }   
+.yt_vm_simpletabs .arrow1 {background-image : url('../images/arrow.png'); height: 8px; width: 6px; margin-right: 6px; margin-top: 4px; float: left }  
+.yt_vm_simpletabs .theme1 .a { text-decoration: none; }
+.yt_vm_simpletabs .theme1 .h3 { margin: 0 0 10px 0; line-height: 1.5;}
+
+.yt_vm_simpletabs .theme1 .tabs {
+    background: url("../../images/title-ctst.gif") repeat-x scroll left top;
+    bottom: -1px;
+    float: left;
+    height: 40px;
+    list-style: none outside none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 50;
+}
+.yt_vm_simpletabs .theme1 .tabs li {
+    background:transparent;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    padding: 0;
+}
+.yt_vm_simpletabs .theme1 .tabs li:first-child {
+    padding: 0 0 0 15px;
+}
+.yt_vm_simpletabs .theme1 .tabs li a {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.yt_vm_simpletabs .theme1 .tabs li a.current {
+    background: url("../../images/title-ctst-active.gif") repeat-x scroll left top;
+    color: #135CAE;
+    position: relative;
+}
+.yt_vm_simpletabs .theme1 .box-wrapper {
+    float: left;
+    overflow: hidden;
+}
+/*.yt_vm_simpletabs .theme1 .box-wrapper {left: 1px; padding: 0px; overflow: hidden; }  */
+.yt_vm_simpletabs .theme1 .content-box {
+    background: none repeat scroll 0 0 white;
+    display: none;
+    overflow: hidden;
+    padding: 20px 10px 20px 20px;
+}
+.yt_vm_simpletabs .theme1 .current { display: block !important; }
+
+.yt_vm_simpletabs .theme1 .col-two, .theme1 .col-three {float: left; position: relative; top: 350px; overflow: hidden /*padding-top: 4px;  */}
+/*.yt_vm_simpletabs .theme1 .col-three {margin-top: -14px;}   */
+.yt_vm_simpletabs .theme1 .col-one {width: auto; float: left; position: relative; top: 350px;}
+.yt_vm_simpletabs .theme1 .col-one a{
+	display:block;
+}
+.yt-vm-simpletabs .theme1 .col-one {
+    margin-right: 10px;
+    overflow: hidden;
+}
+/*them2*/
+
+.yt_vm_simpletabs .theme2 .a { text-decoration: none; }
+.yt_vm_simpletabs .theme2 .h3 { margin: 0 0 10px 0; }
+
+.yt_vm_simpletabs .theme2 .tabs {list-style: none; overflow: hidden; padding-left: 1px; margin: 0px; border-right: none; z-index: 3; text-align: left; border-top: 1px solid #ccc;}
+.yt_vm_simpletabs .theme2 .tabs li { display: inline; background-image: none!important;}
+.yt_vm_simpletabs .theme2 .tabs li a {display: block; padding: 4px 8px; color: black; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; background: #eee; margin: 0 0 0 -1px; text-decoration: none; width: 114px}
+.yt_vm_simpletabs .theme2 .tabs li a.current {background: white; position: relative; z-index: 2; border-right: none; }
+
+.yt_vm_simpletabs .theme2 .box-wrapper {left: -1px;z-index:1; }
+.yt_vm_simpletabs .theme2 .content-box {overflow: hidden; position: relative; border: 1px solid #ccc; display: none; text-align: left;  padding: 10px; background: white; right: 1px;}
+.yt_vm_simpletabs .theme2 .current { display: block !important; }
+
+.yt_vm_simpletabs .theme2 .col-two, .theme2 .col-three {float: left; position: relative; top: 350px; overflow: hidden}
+/*.yt_vm_simpletabs .theme2 .col-three {margin-top: -14px;} */
+.yt_vm_simpletabs .theme2 .col-one {width: auto; float: left; position: relative; top: 350px;}
+
+
+/*them3*/
+
+.yt_vm_simpletabs .theme3 .a { text-decoration: none; }
+.yt_vm_simpletabs .theme3 .h3 { margin: 0 0 10px 0; }
+
+.yt_vm_simpletabs .theme3 .tabs { list-style: none; overflow: hidden; padding-left: 2px; margin: 0px; text-align: left; border-top: 1px solid #ccc;}
+.yt_vm_simpletabs .theme3 .tabs li { display: inline; background: none!important; }
+.yt_vm_simpletabs .theme3 .tabs li a {display: block; padding: 4px 8px; color: black; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; background: #eee; margin: 0 0 0 -1px; text-decoration: none; width: 114px}
+.yt_vm_simpletabs .theme3 .tabs li a.current {background: white; position: relative; z-index: 2; border-left: none;}
+.yt_vm_simpletabs .theme3 .box-wrapper {left: 2px; margin: 0px 0 0 0; position: relative }
+.yt_vm_simpletabs .theme3 .content-box {float: left; border: 1px solid #ccc; position: relative; overflow: hidden; background: white; padding: 10px; display: none; text-align: left; margin-top: 0px;}
+.yt_vm_simpletabs .theme3 .current { display: block !important; }
+
+.yt_vm_simpletabs .theme3 .col-two, .theme3 .col-three {float: left; position: relative; top: 350px; overflow: hidden}
+/*.yt_vm_simpletabs .theme3 .col-three {margin-top: -14px;} */
+.yt_vm_simpletabs .theme3 .col-one {width: auto; float: left; position: relative; top: 350px;}
+
+
+/*them4*/
+
+.yt_vm_simpletabs .theme4 .a { text-decoration: none; }
+.yt_vm_simpletabs .theme4 .h3 { margin: 0 0 10px 0; }
+
+.yt_vm_simpletabs .theme4 .tabs {float: left; width: 800px; margin-left: 0px; list-style: none; overflow: hidden; padding-left: 1px; margin-top: -1px;  }
+.yt_vm_simpletabs .theme4 .tabs li { display: inline; background-image: none!important; }
+.yt_vm_simpletabs .theme4 .tabs li a {display: block; padding: 4px 8px; color: black; border: 1px solid #ccc; background: #eee; margin: 0 0 0 -1px; text-decoration: none;}
+.yt_vm_simpletabs .theme4 .tabs li a.current {padding-top: 5px; border-top: none; background: white; position: relative; z-index: 2;}
+
+.yt_vm_simpletabs .theme4 .content-box {float: left; overflow: hidden; top: 20px; left: 20px; display: none; text-align: left; border: 1px solid #ccc; padding: 10px;  }
+.yt_vm_simpletabs .theme4 .current { display: block !important; }
+
+.yt_vm_simpletabs .theme4 .col-two, .theme4 .col-three {float: left; position: relative; top: 350px; overflow: hidden}
+/*.yt_vm_simpletabs .theme4 .col-three {margin-top: -10px;} */
+.yt_vm_simpletabs .theme4 .col-one { width: auto; float: left; position: relative; top: 350px; }
+
+.yt_vm_simpletabs .col-two h3 a {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.yt_vm_simpletabs .col-two h3 {
+    background: none;
+}
+.yt_vm_simpletabs .art_title {
+    margin-bottom: 5px;
+}
+.yt_vm_simpletabs .art_desc {
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+.yt_vm_simpletabs .art_title a {
+    color: #000;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.yt_vm_simpletabs .art_title  a:hover{
+    margin-bottom: 5px;
+	text-decoration:underline;
+}
+.yt_vm_simpletabs .read_more  a{
+	text-decoration:none;	
+}
+.yt_vm_simpletabs .read_more  a:hover{
+	text-decoration:underline;
+}
+.yt_vm_simpletabs .normal_title a{
+    color: #006BB9;
+}
+.yt_vm_simpletabs .normal_title a:hover{
+	text-decoration:underline;
+}
+.yt_vm_simpletabs .col-one {
+    text-align: center
+}
+.yt_vm_simpletabs .normal_image img{
+	border: 1px solid #ccc; 
+}
+.yt_vm_simpletabs .col-three ul li {
+
+}
+.yt_vm_simpletabs .articles li {
+    background: url("../../images/article-ctsbt.gif") no-repeat scroll left 8px;
+    line-height: 1.8;
+    padding-left: 10px;
+}
+.yt_vm_simpletabs .arrow_articles {
+    padding-bottom: 5px;
+}
+

@@ -1,0 +1,75 @@
+﻿	.boxgrid h3.title-tophit{
+		margin: 0 0 !important;
+		padding:0;
+		color:#FFFFFF;
+		font-size:11px;
+		font-weight:bold;
+		letter-spacing:-1px;
+		text-decoration:none;
+		text-align: left;
+		background:none;
+		text-shadow:none;
+		padding: 5px;
+	}
+
+	h3.title-tophit a{
+		text-decoration:none;
+		text-align:center;
+		color:#FFFFFF;
+	}
+	.boxgrid{ 
+		margin:0; 
+		overflow: hidden; 
+		position: relative;
+		background:#000000;
+	}
+	.boxgrid1 img,
+	.boxgrid5 img{ 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		border: 0; 
+	}
+	.boxgrid3 img,
+	.boxgrid4 img,
+	.boxgrid2 img{
+		position:absolute;
+		top:0; 
+		left:0; 
+		border:0;
+		z-index:10;
+	}
+	.boxgrid p{
+		padding: 0 5px;
+		margin:0;
+		color:#afafaf;
+		font-size:11px;
+	}
+
+
+		
+	.boxcaption{ 
+		float: left; 
+		position: absolute; 
+		background: #000; 
+		width: 100%; 
+		opacity: 1; 
+		/* For IE 5-7 */
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		/* For IE 8 */
+		-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	.boxcaption1{
+		left:0;
+	}
+	.boxcaption5{
+		left:0;
+	}
+	.boxcaption3,
+	.boxcaption4,
+	.boxcaption2{
+		top:0;
+		left:0;
+		opacity: 1;
+		z-index:1;
+	}

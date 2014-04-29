@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - MovingText</name>
+	<author>Sakis Terzis</author>
+	<creationDate>30 May 2013</creationDate>
+	<copyright>breakDesigns</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://breakdesigns.net/</authorUrl>
+	<version>3.1</version>
+
+
+	<description>This plugin gives you the ability to have sliding text
+		inside your content.Usage: {text=the text you want to use} example
+		{text=I hope you like that plugin}. The moving elements could be
+		styled using the className "movingObj". Avoid using p and br tags.
+
+	</description>
+	<files>
+		<filename plugin="movingtext">movingtext.php</filename>
+		<filename plugin="movingtext">movingtext.xml</filename>
+		<folder>movingtextassets</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+        <fieldset name="basic"> 
+			<field name="mskWidth" type="text" default="300"
+				label="Vissible text Width in px" description="The width of the visible mask of the text" />
+			<field name="speed" type="text" default="2" label="Speed of Text"
+				description="The speed of the text movement" />
+			<field name="time" type="text" default="80" label="Movement Interval"
+				description="The inteval to in milliseconds to do the movement." />
+		</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------------
+ # Yt Content Simple Tabs  - Version 1.1
+ # Copyright (C) 2011-2012 The YouTech Company. All Rights Reserved.
+ # @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Author: The YouTech Company
+ # Websites: http://www.ytcvn.com
+ -------------------------------------------------------------------------*/
+
+/*them3*/
+
+
+.yt-content-simpletabs .theme3 .tabs { position:relative; margin-top: 0px;}
+
+                                 
+.yt-content-simpletabs .theme1 .tabs {position: relative}
+
+.yt-content-simpletabs .theme1 .content-box {position: relative; overflow: hidden}

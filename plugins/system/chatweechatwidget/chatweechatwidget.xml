@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="system">
+	<name>Chatwee Widget Chat</name>
+	<author>Chatwee Team</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright (C) 20014 Chatwee. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>wojciech.majerski@chatwee.com</authorEmail>
+	<authorUrl>chatwee.com</authorUrl>
+	<version>1.0</version>
+	<description>This is Chatwee.</description>
+	<files>
+		<filename plugin="chatweechatwidget">chatweechatwidget.php</filename>
+	</files>
+	<params> 
+		<param name="widget_code"  type="textarea" default="" label="Chatwee code snippet" cols="40" rows="10" description="Copy the code snippet.." />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="widget_code" filter="raw" type="textarea" default="" label="Chatwee code snippet" cols="40" rows="10" description="Copy the code snippet." />
+			</fieldset>
+		</fields>
+	</config>
+</extension> 
